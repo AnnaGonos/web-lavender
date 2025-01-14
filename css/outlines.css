@@ -292,31 +292,31 @@ nav {
     gap: 40px;
 }
 
-.blog__container-item {
+.blog__item {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.blog__container-item-image {
+.blog__item-image {
     display: flex;
     height: 250px;
     border-radius: 8px;
     object-fit: cover;
 }
 
-.blog__description {
+.blog__item-description {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.blog__description-date {
+.blog__item-date {
     font-size: 16px;
     color: dimgrey;
 }
 
-.blog__description-title {
+.blog__item-title {
     font-size: 22px;
 }
 
