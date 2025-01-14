@@ -56,14 +56,11 @@ header {
 
 .header {
     display: flex;
-    /*grid-template-columns: 1fr 1fr 1fr;*/
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px 20px 40px;
     background-color: #ffffff;
     height: 60px;
-    /*border-bottom-left-radius: 200px;*/
-    /*border-bottom: 1px solid #000000;*/
 }
 
 nav {
@@ -79,7 +76,6 @@ nav {
 
 .header__menu-list {
     display: flex;
-    /*justify-content: flex-start;*/
     margin: 0;
     padding: 0;
     gap: 20px;
@@ -143,23 +139,23 @@ nav {
 
 .slider__slide-background {
     display: flex;
-    justify-content: center; /* Центрируем изображение по горизонтали */
-    align-items: center; /* Центрируем изображение по вертикали */
+    justify-content: center;
+    align-items: center;
     z-index: 0;
-    width: 100%; /* Ширина на 100% */
-    height: 600px; /* Фиксированная высота */
-    overflow: hidden; /* Скрываем часть изображения, если оно выходит за пределы */
-    position: absolute; /* Относительное позиционирование для вложенных элементов */
-    background-size: cover; /* Масштабирует изображение так, чтобы оно покрывало весь элемент */
-    background-position: center; /* Центрирует изображение на фоне */
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
 }
 
-.slider__slide-background-item { /* Изменяем класс для изображения */
-    width: 100%; /* Минимальная ширина для заполнения контейнера */
-    height: 600px; /* Минимальная высота для отображения */
-    position: relative; /* Позволяет изображению занимать свободное пространство */
+.slider__slide-background-item {
+    width: 100%;
+    height: 600px;
+    position: relative;
     display: flex;
-    object-fit: cover; /* Обеспечивает, что изображение не искажается и заполняет весь контейнер */
+    object-fit: cover;
 }
 
 
@@ -172,7 +168,6 @@ nav {
     padding-bottom: 120px;
     justify-content: flex-end;
     gap: 15px;
-    /*height: 100%;*/
     z-index: 4;
     position: relative;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(255, 255, 255, 0) 100%);
@@ -183,6 +178,14 @@ nav {
     color: white;
     text-transform: uppercase;
     font-weight: 400;
+}
+
+.slider__slide-subtitle {
+    font-size: 24px;
+}
+
+.slider__slide-title {
+    font-size: 32px;
 }
 
 .slider__slide-button {
@@ -353,6 +356,33 @@ nav {
 }
 
 @media screen and (max-width: 600px) {
+    h1, h2, h3, h4, h5, p, a {
+        font-weight: 300;
+        font-family: 'Raleway', sans-serif;
+        color: #000000;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    h4 {
+        font-size: 22px;
+    }
+
+    h5, p, a {
+        font-size: 14px;
+    }
+
+
     .header {
         display: none;
     }
@@ -361,10 +391,34 @@ nav {
         padding: 0 20px;
     }
 
+
     .slider__swiper {
         display: flex;
         flex-direction: column;
         height: 450px;
+    }
+
+    .slider__slide-background {
+        height: 450px;
+    }
+
+    .slider__slide-description {
+        display: flex;
+        flex-direction: column;
+        padding-left: 60px;
+        top: 40%;
+        padding-bottom: 120px;
+        justify-content: flex-end;
+        gap: 10px;
+        /*height: 100%;*/
+        z-index: 4;
+        position: relative;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(255, 255, 255, 0) 100%);
+    }
+
+    .slider__button {
+        width: 35px;
+        height: 35px;
     }
 
     .slider__button--prev {
@@ -373,6 +427,27 @@ nav {
 
     .slider__button--next {
         right: 10px;
+    }
+
+    .slider__slide-subtitle, .slider__slide-title {
+        width: 80%;
+    }
+
+    .slider__slide-subtitle {
+        font-size: 18px;
+    }
+
+    .slider__slide-title {
+        font-size: 24px;
+    }
+
+    .slider__slide-background-item {
+        display: none;
+        height: 450px;
+    }
+
+    .slider__slide-background-item:nth-child(1) {
+        display: flex;
     }
 
     .footer {
@@ -394,6 +469,10 @@ nav {
         gap: 10px;
         width: 100%;
     }
+
+
+
+
 }
 
 
