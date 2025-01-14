@@ -10,9 +10,9 @@ var swiper = new Swiper('.swiper', {
         prevEl: '.slider__button--prev',
     },
 
-    // autoplay: {
-    //     delay: 3500,
-    // },
+    autoplay: {
+        delay: 3500,
+    },
 
     simulateTouch: true,
     touchRatio: 2,

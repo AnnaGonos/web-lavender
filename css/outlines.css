@@ -126,7 +126,7 @@ nav {
 }
 
 .slider__swiper {
-    height: 550px;
+    height: 600px;
     border-radius: 8px;
 }
 
@@ -136,21 +136,49 @@ nav {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100%;
     position: relative;
     background: #d3d3d3;
 }
 
+.slider__slide-background {
+    display: flex;
+    justify-content: center; /* Центрируем изображение по горизонтали */
+    align-items: center; /* Центрируем изображение по вертикали */
+    z-index: 0;
+    width: 100%; /* Ширина на 100% */
+    height: 600px; /* Фиксированная высота */
+    overflow: hidden; /* Скрываем часть изображения, если оно выходит за пределы */
+    position: absolute; /* Относительное позиционирование для вложенных элементов */
+    background-size: cover; /* Масштабирует изображение так, чтобы оно покрывало весь элемент */
+    background-position: center; /* Центрирует изображение на фоне */
+}
+
+.slider__slide-background-item { /* Изменяем класс для изображения */
+    width: 100%; /* Минимальная ширина для заполнения контейнера */
+    height: 600px; /* Минимальная высота для отображения */
+    position: relative; /* Позволяет изображению занимать свободное пространство */
+    display: flex;
+    object-fit: cover; /* Обеспечивает, что изображение не искажается и заполняет весь контейнер */
+}
+
+
 .slider__slide-description {
     display: flex;
     flex-direction: column;
+    padding-top: 20px;
     padding-left: 100px;
-    margin-bottom: 120px;
+    top: 50%;
+    padding-bottom: 120px;
     justify-content: flex-end;
     gap: 15px;
-    height: 100%;
+    /*height: 100%;*/
+    z-index: 4;
+    position: relative;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
-.slider__slide-predescription, .slider__slide-title {
+.slider__slide-subtitle, .slider__slide-title {
     display: flex;
     color: white;
     text-transform: uppercase;
@@ -208,9 +236,7 @@ nav {
 }
 
 .swiper-wrapper {
-    /*height: 500px;*/
     background: #666;
-
 }
 
 .slider__pagination {
@@ -231,6 +257,7 @@ nav {
 
 .slider__pagination .swiper-pagination-bullet-active {
     background-color: #6C4795;
+    border: 1px solid #D5B8F1;
 }
 
 
@@ -246,6 +273,7 @@ nav {
 .footer {
     display: flex;
     flex-direction: column;
+    margin-top: 100px;
     padding: 0 40px 60px 40px;
 }
 
