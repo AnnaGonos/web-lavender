@@ -18,14 +18,21 @@
     <title>Цветочный магазин "Лаванда" | Заказ букетов с доставкой на дом в Партизанске</title>
 </head>
 <body>
-<header class="header">
+<header class="header" id="header">
     <a href="#" class="header__logo">
         <img src="images/logo.jpg" alt="Основное изображение логотипа">
     </a>
     <nav class="header__menu">
         <ul class="header__menu-list">
             <li class="header__menu-item"><a href="" class="header__menu-link">Каталог</a></li>
-            <li class="header__menu-item"><a href="" class="header__menu-link">Клиентам</a></li>
+            <li class="header__menu-item "><p class="header__menu-link">Клиентам</p>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item"><a href="#" class="dropdown-link">Отзывы</a></li>
+                    <li class="dropdown-item"><a href="#" class="dropdown-link">Доставка</a></li>
+                    <li class="dropdown-item"><a href="#" class="dropdown-link">Вопрос-ответ</a></li>
+                    <li class="dropdown-item"><a href="#" class="dropdown-link">Уход за букетом</a></li>
+                </ul>
+            </li>
             <li class="header__menu-item"><a href="blog.html" class="header__menu-link">Блог</a></li>
             <li class="header__menu-item"><a href="" class="header__menu-link">Контакты</a></li>
         </ul>
@@ -46,8 +53,8 @@
             <img src="images/icons/person.svg" alt="Иконка личного кабинета">
         </a>
     </div>
-
 </header>
+<script src="js/scrollTop.js"></script>
 <main>
     <section class="slider">
         <div class="slider__swiper swiper">
@@ -140,29 +147,38 @@
             <p>Специальные предложения и лимитированные коллекции, доступные только в течение недели</p>
         </div>
         <div class="sales__container">
-            <article class="product__item">
-                <img class="product__image" alt="Картинка к товару" src="images/flowers/14.30.51_eb61f2da.jpg">
+            <article class="product__item product__item--sale">
+                <div class="product__image-container">
+                    <img class="product__image product__image--sale" alt="Картинка товара" src="images/flowers/14.30.51_eb61f2da.jpg">
+                    <div class="product__border"></div>
+                    <div class="product__border"></div><!-- Новый элемент для бордюра -->
+                </div>
                 <div class="product__description">
                     <p class="product__name">Букет №2</p>
                     <div class="product__prices">
                         <p class="product__price product__price--discounted">3100</p>
                         <p class="product__price product__price--original">3600</p>
                     </div>
-                    <div class="product__links">
+                    <div class="product__links product__links--sale">
                         <a href="#" class="product__link product__link--details">Подробнее</a>
                         <a href="#" class="product__link product__link--cart">В корзину</a>
                     </div>
                 </div>
             </article>
-            <article class="product__item">
-                <img class="product__image" alt="Картинка к товару" src="images/flowers/14.23.41_fce727b1.jpg">
+            <article class="product__item product__item--sale">
+                <div class="product__image-container">
+                    <img class="product__image product__image--sale" alt="Картинка товара" src="images/flowers/14.23.41_fce727b1.jpg">
+                    <div class="product__border"></div>
+                    <div class="product__border"></div>
+                </div>
+
                 <div class="product__description">
                     <p class="product__name">Букет №122</p>
                     <div class="product__prices">
                         <p class="product__price product__price--discounted">3200</p>
                         <p class="product__price product__price--original">3800</p>
                     </div>
-                    <div class="product__links">
+                    <div class="product__links product__links--sale">
                         <a href="#" class="product__link product__link--details">Подробнее</a>
                         <a href="#" class="product__link product__link--cart">В корзину</a>
                     </div>

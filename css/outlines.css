@@ -51,10 +51,29 @@ main {
     gap: 80px;
 }
 
+section:first-child {
+    padding-top: 200px;
+}
+
 header {
     display: flex;
     margin-bottom: 40px;
 }
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+.header.hidden {
+    transform: translateY(-100%);
+}
+
 
 .header {
     display: flex;
@@ -81,11 +100,74 @@ nav {
     margin: 0;
     padding: 0;
     gap: 20px;
+    align-items: center;
 }
 
 .header__menu-item {
-    margin-left: 0;
     list-style: none;
+    position: relative;
+    margin: 0;
+    padding: 10px 0;
+    width: 100%;
+
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    /*margin-top: 10px;*/
+    display: none;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    z-index: 999;
+    margin: 0;
+    padding: 15px;
+    min-width: 150px;
+}
+
+
+.dropdown-item {
+    list-style: none;
+    text-transform: uppercase;
+    left: 0;
+    margin: 0;
+    display: block;
+    padding-bottom: 8px;
+}
+
+.dropdown-item:last-child {
+    padding-bottom: 0;
+}
+
+.dropdown-link {
+    display: block;
+    /*padding: 10px 15px;*/
+    text-decoration: none;
+    margin: 0;
+    width: fit-content;
+    font-weight: 400;
+}
+
+.header__menu-item:hover .dropdown-menu {
+    display: block;
+
+}
+
+
+@media (max-width: 600px) {
+    .dropdown-menu {
+        position: static;
+        display: none;
+    }
+
+    .header__menu-item:hover .dropdown-menu {
+        display: block;
+        width: 100%;
+
+    }
+
 }
 
 .about-us__address-link {
@@ -96,6 +178,10 @@ nav {
 .header__menu-link, .footer__address-link, .footer__telephone-number, .footer__social-network-item {
     font-weight: 500;
     text-transform: uppercase;
+}
+
+.header__menu-item {
+    padding: 10px 0;
 }
 
 .header__logo {
@@ -269,7 +355,6 @@ nav {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    /*padding-left: 80px;*/
     padding-bottom: 20px;
 }
 
@@ -299,19 +384,40 @@ nav {
     flex-direction: column;
     text-transform: uppercase;
     width: 100%;
+    font-weight: 400;
 }
 
-.sales__container, .online__container {
+.product__name {
+
+}
+
+.sales__container, .online__container  {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
     gap: 40px;
+}
+
+.sales__container {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.online__container {
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .product__item {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
 
+.product__item--sale {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.product__image-container {
+    position: relative;
 }
 
 .product__image {
@@ -322,6 +428,29 @@ nav {
     height: 350px;
     border-radius: 8px;
 }
+
+.product__image--sale, .product__border  {
+    height: 300px;
+    border-radius: 60% 40%;
+}
+
+.product__border {
+    position: absolute;
+    bottom: 0;
+    border-radius: 50%;
+    width: 100%;
+    border: #6C4795 solid 1px;
+    transform: rotate(90deg);
+    transform-origin: center center;
+    z-index: 1;
+}
+
+.product__border:nth-child(2) {
+    border: #D5B8F1 solid 1px;
+    transform: rotate(40deg);
+    z-index: 1;
+}
+
 
 .product__description {
     display: flex;
@@ -341,12 +470,17 @@ nav {
     width: 100%;
 }
 
+.product__links--sale {
+    display: flex;
+    flex-direction: column;
+}
+
 .product__link {
     text-transform: uppercase;
     display: flex;
     justify-content: center;
     height: fit-content;
-    width: 100%;
+
     border-radius: 8px;
     padding: 8px;
     font-weight: 400;
@@ -377,12 +511,11 @@ nav {
     color: #4c4c4c;
 }
 
-
 .catalog__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
-    padding: 0 40%;
+    padding: 0 30%;
     justify-content: center;
 }
 
@@ -390,7 +523,7 @@ nav {
     width: 160px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: flex-start;
     gap: 20px;
 }
 
@@ -405,8 +538,7 @@ nav {
 .catalog__name {
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-left: 10%;
     font-weight: 400;
 }
 
@@ -489,7 +621,6 @@ nav {
     border-radius: 8px;
     height: 350px;
 }
-
 
 .blog-article__content {
     display: grid;
@@ -747,7 +878,14 @@ nav {
 }
 
 @media screen and (max-width: 1100px) {
-    .sales__container, .online__container {
+    .product__border  {
+        height: 70%;
+        border-radius: 50%;
+        width: 110%;
+        bottom: 15%;
+    }
+
+    .online__container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 40px;
@@ -770,6 +908,26 @@ nav {
 
     .about-us__content {
         order: 1;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        padding-bottom: 60px;
+    }
+
+    .header__logo {
+        padding-bottom: 10px;
+    }
+
+    .header__menu {
+        order: 3;
     }
 
 }
@@ -802,9 +960,21 @@ nav {
         font-size: 14px;
     }
 
-
     .header {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        padding-bottom: 60px;
+    }
+
+    .header__logo {
+        padding-bottom: 10px;
+    }
+
+    .header__menu {
+        order: 3;
     }
 
     .slider, .sales, .online, .catalog, .about-us, .blog, .blog-article {
@@ -869,7 +1039,24 @@ nav {
         display: flex;
     }
 
-    .sales__container, .online__container {
+    .sales__container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+
+     .product__border  {
+        height: 80%;
+        border-radius: 50%;
+        width: 100%;
+     }
+
+    /*.product__border  {*/
+    /*    border-radius: 50%;*/
+    /*}*/
+
+
+    .online__container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         row-gap: 40px;
