@@ -5,10 +5,8 @@ window.addEventListener("scroll", function() {
     const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
     if (currentScroll > lastScrollTop) {
-        // прокрутка вниз
         header.classList.add("hidden");
     } else {
-        // прокрутка вверх
         header.classList.remove("hidden");
     }
 
@@ -21,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     clientLink.addEventListener('click', function(event) {
         event.preventDefault(); // Предотвращаем переход по ссылке
-        dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block'; // Переключение видимости подменю
+        dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
     });
 
     // document.addEventListener("click", function(event) {

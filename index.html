@@ -24,12 +24,12 @@
     </a>
     <nav class="header__menu">
         <ul class="header__menu-list">
-            <li class="header__menu-item"><a href="" class="header__menu-link">Каталог</a></li>
+            <li class="header__menu-item"><a href="catalog.html?category=Все%20букеты" class="header__menu-link">Каталог</a></li>
             <li class="header__menu-item "><p class="header__menu-link">Клиентам</p>
                 <ul class="dropdown-menu">
-                    <li class="dropdown-item"><a href="#" class="dropdown-link">Отзывы</a></li>
                     <li class="dropdown-item"><a href="#" class="dropdown-link">Доставка</a></li>
                     <li class="dropdown-item"><a href="#" class="dropdown-link">Вопрос-ответ</a></li>
+                    <li class="dropdown-item"><a href="#" class="dropdown-link">Отзывы</a></li>
                     <li class="dropdown-item"><a href="#" class="dropdown-link">Уход за букетом</a></li>
                 </ul>
             </li>
@@ -55,6 +55,7 @@
     </div>
 </header>
 <script src="js/scrollTop.js"></script>
+<script src="js/activeMenu.js"></script>
 <main>
     <section class="slider">
         <div class="slider__swiper swiper">
@@ -252,30 +253,28 @@
     <section class="catalog">
         <h2 class="catalog__title">Каталог</h2>
         <div class="catalog__container">
-            <a href="#" class="catalog__item">
+            <a href="catalog.html?category=Все%20букеты" class="catalog__item">
                 <img src="images/flowers/14.41.13_a908f0ff.jpg" alt="Раздел все букеты" class="catalog__image">
                 <p class="catalog__name">Все букеты</p>
             </a>
-            <a href="#" class="catalog__item">
-                <img src="images/flowers/14.33.44_00edde28.jpg" alt="Раздел все букеты" class="catalog__image">
+            <a href="catalog.html?category=Цветочные%20композиции" class="catalog__item">
+                <img src="images/flowers/14.33.44_00edde28.jpg" alt="Раздел цветочные композиции" class="catalog__image">
                 <p class="catalog__name">Цветочные композиции</p>
             </a>
-            <a href="#" class="catalog__item">
-                <img src="images/flowers/14.30.42_85b4cd55.jpg" alt="Раздел дуо и монобукеты" class="catalog__image">
+            <a href="catalog.html?category=Моно%20и%20дуобукеты" class="catalog__item">
+                <img src="images/flowers/14.30.42_85b4cd55.jpg" alt="Раздел моно и дуобукеты" class="catalog__image">
                 <p class="catalog__name">Моно и дуобукеты</p>
             </a>
-            <a href="#" class="catalog__item">
-                <img src="https://avatars.mds.yandex.net/get-altay/2390040/2a00000174635767858ab48bfd618357c63e/XXXL"
-                     alt="Раздел все букеты" class="catalog__image">
+            <a href="catalog.html?category=Свадебные" class="catalog__item">
+                <img src="https://avatars.mds.yandex.net/get-altay/2390040/2a00000174635767858ab48bfd618357c63e/XXXL" alt="Раздел свадебные" class="catalog__image">
                 <p class="catalog__name">Свадебные</p>
             </a>
-            <a href="#" class="catalog__item">
-                <img src="images/flowers/aa76f11200fffd3e1cadd6b940a31f88.jpg" alt="Раздел все букеты"
-                     class="catalog__image">
+            <a href="catalog.html?category=Подарки%20и%20предметы%20для%20дома" class="catalog__item">
+                <img src="images/flowers/aa76f11200fffd3e1cadd6b940a31f88.jpg" alt="Раздел подарки и предметы для дома" class="catalog__image">
                 <p class="catalog__name">Подарки и предметы для дома</p>
             </a>
-            <a href="#" class="catalog__item">
-                <img src="images/flowers/bouquet-6.bmp" alt="Раздел все букеты" class="catalog__image">
+            <a href="catalog.html?category=Комнатные%20цветы" class="catalog__item">
+                <img src="images/flowers/bouquet-6.bmp" alt="Раздел комнатные цветы" class="catalog__image">
                 <p class="catalog__name">Комнатные цветы</p>
             </a>
         </div>
@@ -375,6 +374,25 @@
         </div>
 
     </section>
+
+    <section class="messenger-container">
+        <div class="messenger-container__icon" id="toggleIcon">
+            <img class="messenger-container__icon-item" id="firstIcon" src="images/icons/chat-right-text.svg" alt="Иконка мессенджеров">
+            <img class="messenger-container__icon-item" id="secondIcon" src="images/icons/x-lg.svg" alt="Иконка мессенджеров">
+        </div>
+        <div class="messenger-container__links" id="linksContainer">
+            <div class="messenger-container__content">
+                <p class="messenger-container__title">Требуется помощь?</p>
+                <p>Обращайтесь к нам любым удобным для вас способом!</p>
+            </div>
+
+            <a href="https://t.me/yourtelegram" class="messenger-container__link-item">Telegram</a>
+            <a href="https://wa.me/yourwhatsapp" class="messenger-container__link-item">WhatsApp</a>
+            <p class="messenger-container__link-item">+7 914 662-79-11</p>
+
+        </div>
+    </section>
+    <script src="js/messenger.js"></script>
 
 </main>
 

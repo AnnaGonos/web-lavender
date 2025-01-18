@@ -25,7 +25,14 @@
     <nav class="header__menu">
         <ul class="header__menu-list">
             <li class="header__menu-item"><a href="" class="header__menu-link">Каталог</a></li>
-            <li class="header__menu-item"><a href="" class="header__menu-link">Клиентам</a></li>
+            <li class="header__menu-item "><p class="header__menu-link">Клиентам</p>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item"><a href="#" class="dropdown-link">Доставка</a></li>
+                    <li class="dropdown-item"><a href="#" class="dropdown-link">Вопрос-ответ</a></li>
+                    <li class="dropdown-item"><a href="#" class="dropdown-link">Отзывы</a></li>
+                    <li class="dropdown-item"><a href="#" class="dropdown-link">Уход за букетом</a></li>
+                </ul>
+            </li>
             <li class="header__menu-item"><a href="blog.html" class="header__menu-link">Блог</a></li>
             <li class="header__menu-item"><a href="" class="header__menu-link">Контакты</a></li>
         </ul>
@@ -49,19 +56,6 @@
 </header>
 <script src="js/scrollTop.js"></script>
 <main>
-    <div class="snowflakes" aria-hidden="true">
-        <div class="snowflakes__item">❄</div>
-        <div class="snowflakes__item">❄</div>
-        <div class="snowflakes__item">❄</div>
-        <div class="snowflakes__item">❄</div>
-        <div class="snowflakes__item">❄</div>
-        <div class="snowflakes__item">❄</div>
-        <div class="snowflakes__item">❄</div>
-        <div class="snowflakes__item">❄</div>
-        <div class="snowflakes__item">❄</div>
-        <div class="snowflakes__item">❄</div>
-    </div>
-
     <section class="blog-article">
         <div class="blog-article__header">
             <p class="blog-article__subtitle blog-article__subtitle--green">Новогодняя коллекция январь 2025</p>
@@ -183,6 +177,39 @@
     <div id="modal" class="modal" onclick="closeModal()">
         <span class="close" onclick="closeModal()">&times;</span>
         <img class="modal__content" id="modal-image" alt="">
+    </div>
+
+
+    <section class="messenger-container">
+        <div class="messenger-container__icon" id="toggleIcon">
+            <img class="messenger-container__icon-item" id="firstIcon" src="images/icons/chat-right-text.svg" alt="Иконка мессенджеров">
+            <img class="messenger-container__icon-item" id="secondIcon" src="images/icons/x-lg.svg" alt="Иконка мессенджеров">
+        </div>
+        <div class="messenger-container__links" id="linksContainer">
+            <div class="messenger-container__content">
+                <p class="messenger-container__title">Требуется помощь?</p>
+                <p>Обращайтесь к нам любым удобным для вас способом!</p>
+            </div>
+
+            <a href="https://t.me/yourtelegram" class="messenger-container__link-item">Telegram</a>
+            <a href="https://wa.me/yourwhatsapp" class="messenger-container__link-item">WhatsApp</a>
+            <p class="messenger-container__link-item">+7 914 662-79-11</p>
+
+        </div>
+    </section>
+    <script src="js/messenger.js"></script>
+
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflakes__item">❄</div>
+        <div class="snowflakes__item">❄</div>
+        <div class="snowflakes__item">❄</div>
+        <div class="snowflakes__item">❄</div>
+        <div class="snowflakes__item">❄</div>
+        <div class="snowflakes__item">❄</div>
+        <div class="snowflakes__item">❄</div>
+        <div class="snowflakes__item">❄</div>
+        <div class="snowflakes__item">❄</div>
+        <div class="snowflakes__item">❄</div>
     </div>
 
     <script src="js/model-image.js"></script>

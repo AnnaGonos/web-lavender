@@ -24,10 +24,24 @@
     </a>
     <nav class="header__menu">
         <ul class="header__menu-list">
-            <li class="header__menu-item"><a href="" class="header__menu-link">Каталог</a></li>
-            <li class="header__menu-item"><a href="" class="header__menu-link">Клиентам</a></li>
-            <li class="header__menu-item"><a href="#" class="header__menu-link">Блог</a></li>
-            <li class="header__menu-item"><a href="" class="header__menu-link">Контакты</a></li>
+            <li class="header__menu-item">
+                <a href="catalog.html" class="header__menu-link">Каталог</a>
+            </li>
+            <li class="header__menu-item">
+                <p class="header__menu-link">Клиентам</p>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item"><a href="delivery.html" class="dropdown-link">Доставка</a></li>
+                    <li class="dropdown-item"><a href="faq.html" class="dropdown-link">Вопрос-ответ</a></li>
+                    <li class="dropdown-item"><a href="reviews.html" class="dropdown-link">Отзывы</a></li>
+                    <li class="dropdown-item"><a href="care.html" class="dropdown-link">Уход за букетом</a></li>
+                </ul>
+            </li>
+            <li class="header__menu-item">
+                <a href="blog.html" class="header__menu-link">Блог</a>
+            </li>
+            <li class="header__menu-item">
+                <a href="contacts.html" class="header__menu-link">Контакты</a>
+            </li>
         </ul>
     </nav>
     <div class="header__menu-person">
@@ -48,6 +62,7 @@
     </div>
 </header>
 <script src="js/scrollTop.js"></script>
+<script src="js/activeMenu.js"></script>
 <main>
     <section class="blog">
         <h2 class="blog__title">Блог</h2>
