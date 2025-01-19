@@ -247,7 +247,7 @@ nav {
 }
 
 .sales, .slider, .online, .catalog, .about-us, .blog, .blog-article, .delivery, .catalog-filter,
-.product, .recommendations, .faq {
+.product, .recommendations, .faq, .care {
     padding: 0 40px;
 }
 
@@ -400,14 +400,14 @@ nav {
 }
 
 .about-us, .sales, .online, .catalog, .blog, .blog-article, .about-us__content, .delivery, .catalog-filter,
-.recommendations, .faq {
+.recommendations, .faq, .care {
     display: flex;
     flex-direction: column;
     gap: 60px;
 }
 
-.sales__title, .online__title, .catalog__title, .product__name, .catalog__name, .faq__title,
-.about-us__title, .about-us__description-item-title, .catalog-filter__prices, .blog__title,
+.sales__title, .online__title, .catalog__title, .product__name, .catalog__name, .faq__title, .about-us__title,
+.about-us__description-item-title, .catalog-filter__prices, .blog__title, .care__title, .care__subtitle,
 .blog-article__header, .delivery__title, .messenger-container__title, .product-item__title, .recommendations__title {
     display: flex;
     flex-direction: column;
@@ -416,7 +416,7 @@ nav {
     font-weight: 400;
 }
 
-.sales__container, .online__container, .recommendations__container, .product, .faq__container {
+.sales__container, .online__container, .recommendations__container, .product, .faq__container, .care__container {
     display: grid;
     gap: 40px;
 }
@@ -432,7 +432,7 @@ nav {
     padding: 0 40px;
 }
 
-.sales__container, .faq__container {
+.sales__container, .faq__container, .care__container {
     grid-template-columns: repeat(2, 1fr);
 }
 
@@ -1012,6 +1012,35 @@ nav {
     background-color: black;
 }
 
+.care__item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.care__text {
+    line-height: 1.5;
+}
+
+.care__subtitle {
+    margin-top: 10px;
+}
+
+.care__images {
+    display: flex;
+    border-radius: 8px;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.care__image {
+    display: flex;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
 .catalog-filter {
     display: flex;
     flex-direction: column;
@@ -1416,19 +1445,19 @@ nav {
     }
 
     h1 {
-        font-size: 36px;
+        font-size: 30px;
     }
 
     h2 {
-        font-size: 32px;
+        font-size: 28px;
     }
 
     h3 {
-        font-size: 25px;
+        font-size: 24px;
     }
 
     h4 {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     h5, p, a {
@@ -1453,7 +1482,7 @@ nav {
     }
 
     .slider, .sales, .online, .catalog, .about-us, .blog, .blog-article, .delivery, .catalog-filter,
-    .product, .product-item, .recommendations, .faq {
+    .product, .product-item, .recommendations, .faq, .care {
         padding: 0 20px;
     }
 
@@ -1515,7 +1544,7 @@ nav {
         display: flex;
     }
 
-    .sales__container, .product-item, .faq__container {
+    .sales__container, .product-item, .faq__container, .care__container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 40px;
