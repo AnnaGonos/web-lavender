@@ -59,15 +59,188 @@
 <script src="js/scrollTop.js"></script>
 <script src="js/activeMenu.js"></script>
 <main>
-    <section class="product">
-        <div class="">
 
-        </div>
-        <div class="product__recommendations">
+    <section class="product-item">
+        <div class="product-item__content">
+            <div class="product-item__images">
+                <img id="main-image" src="images/flowers/11.31.00_f360ef16.jpg" alt="Изображение композиции синей"
+                     class="product-item__image" onclick="openLightbox(this);">
+                <div class="product-item__gallery">
+                    <div class="product-item__gallery-wrapper" onclick="openLightbox(this)">
+                        <img src="images/flowers/11.31.00_f360ef16.jpg" alt="Изображение композиции синей"
+                             class="product-item__gallery-image" data-shade="blue">
+                        <p class="product-item__caption">Синяя</p>
+                    </div>
+                    <div class="product-item__gallery-wrapper" onclick="openLightbox(this)">
+                        <img src="images/flowers/14.23.16_1bef0022.jpg" alt="Изображение композиции розовой"
+                             class="product-item__gallery-image" data-shade="pink">
+                        <p class="product-item__caption">Розовая</p>
+                    </div>
+                </div>
+            </div>
+            <div class="product-item__description">
+                <h1 class="product-item__title">Композиция №2</h1>
+                <div class="product__prices">
+                    <p class="product__price product__price--item">3500</p>
+                </div>
 
+                <div class="product-item__details">
+                    <div class="product-item__details-item">
+                        <p class="product-item__details-content">Букет цветов в люльке на выписку из роддома, цветы в
+                            коляске для мальчика или девочки.
+                        </p>
+                    </div>
+                    <div class="product-item__details-item">
+                        <p class="product-item__details-title">Состав:</p>
+                        <p class="product-item__details-content">Роза, хризантема, ромашки, альстромерия</p>
+                    </div>
+                    <div class="product-item__details-item">
+                        <p class="product-item__details-title">Цветовая палитра:</p>
+                        <div class="product-item__options">
+                            <label class="product-item__option">
+                                <input type="radio" name="shade" value="blue" class="product-item__option-input"
+                                       checked>
+                                <span class="custom-radio"></span>
+                                <span class="product-item__option-label">Синяя</span>
+                            </label>
+
+                            <label class="product-item__option">
+                                <input type="radio" name="shade" value="pink" class="product-item__option-input">
+                                <span class="custom-radio"></span>
+                                <span class="product-item__option-label">Розовая</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="product-item__details-item">
+                        <p class="product-item__details-title">Настроение букета:</p>
+                        <div class="product-item__options">
+                            <label class="product-item__option">
+                                <input type="radio" name="color-palette" value="pastel"
+                                       class="product-item__option-input" checked>
+                                <span class="custom-radio"></span>
+                                <span class="product-item__option-label">Пастельная</span>
+                            </label>
+
+                            <label class="product-item__option">
+                                <input type="radio" name="color-palette" value="bright"
+                                       class="product-item__option-input">
+                                <span class="custom-radio"></span>
+                                <span class="product-item__option-label">Яркая</span>
+                            </label></div>
+                    </div>
+
+                    <div class="product-item__details-item">
+                        <p class="product-item__details-content">Композиция на флористической губке, удобна для
+                            транспортировки и проста в уходе.
+
+                        </p>
+                        <p class="product-item__details-content">Диаметр коробки — 20 см (длина), 12 см (ширина).
+                        </p>
+                        <p class="product-item__details-content">Стойкость букета: средняя.
+                        </p>
+                    </div>
+
+                    <div class="product-item__details-item product-item__details-item--border">
+                        <p class="product-item__details-title">Обратите внимание</p>
+                        <p class="product-item__details-content">
+                            Фотографии, представленные на нашем сайте, служат лишь как примеры. Мы не создаём точные
+                            копии букетов и композиций, а собираем аналогичные, ориентируясь на цветовую палитру и
+                            настроение.
+                        </p>
+                        <p class="product-item__details-content">
+                            Мы подготовим для вас букет и отправим фотографии для согласования перед отправкой.
+                        </p>
+                    </div>
+                </div>
+                <div class="product-item__add-postcards">
+                    <hr>
+                    <div class="product-item__add-postcard-list">
+                        <div class="product-item__add-postcard">
+                            <img class="product-item__add-postcard-image" alt="Открытка"
+                                 src="images/flowers/postcard-6.jpg">
+                            <div class="product-item__add-postcard-description">
+                                <p class="product-item__add-postcard-title">Открытка-карточка</p>
+                                <p class="product-item__add-postcard-price">50</p>
+                            </div>
+                        </div>
+                        <div class="product-item__add-postcard">
+                            <img class="product-item__add-postcard-image" alt="Открытка"
+                                 src="images/flowers/postcard-9.jpg">
+                            <div class="product-item__add-postcard-description">
+                                <p class="product-item__add-postcard-title">Открытка-карточка</p>
+                                <p class="product-item__add-postcard-price">60</p>
+                            </div>
+                        </div>
+                        <div class="product-item__add-postcard">
+                            <img class="product-item__add-postcard-image" alt="Открытка"
+                                 src="images/flowers/postcard-8.jpg">
+                            <div class="product-item__add-postcard-description">
+                                <p class="product-item__add-postcard-title">Открытка-карточка</p>
+                                <p class="product-item__add-postcard-price">80</p>
+                                <a href="#" class="product-item__add-link">Добавить к букету</a>
+                            </div>
+                        </div>
+                        <div class="product-item__postcard-text">
+                            <p class="product-item__postcard-text">Текст открытки</p>
+                            <textarea class="product-item__postcard-input"
+                                      placeholder="Введите текст открытки"></textarea>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="product__links">
+                    <a href="#" class="product__link product__link--cart">В корзину</a>
+                </div>
+            </div>
         </div>
     </section>
 
+    <div id="lightbox" class="lightbox" onclick="closeLightbox();">
+        <span class="lightbox__close">&times;</span>
+        <img alt="Галерея" class="lightbox__content" id="lightbox-image">
+        <p class="lightbox__caption" id="lightbox-caption"></p>
+    </div>
+
+    <script>
+        const mainImage = document.getElementById('main-image');
+        const galleryImages = document.querySelectorAll('.product-item__gallery-image');
+
+        // Функция для обновления заглавного изображения
+        function updateMainImage() {
+            const selectedShade = document.querySelector('input[name="shade"]:checked').value;
+
+            galleryImages.forEach(image => {
+                if (image.dataset.shade === selectedShade) {
+                    mainImage.src = image.src;
+                    mainImage.alt = image.alt;
+                }
+            });
+        }
+
+        function openLightbox(wrapper) {
+            const lightboxImage = document.getElementById('lightbox-image');
+            const lightboxCaption = document.getElementById('lightbox-caption');
+
+            const image = wrapper.querySelector('.product-item__gallery-image');
+            const shade = image.dataset.shade;
+
+            lightboxImage.src = image.src;
+            lightboxCaption.textContent = `Композиция №2. ${shade.charAt(0).toUpperCase() + shade.slice(1)}.`;
+
+            document.getElementById('lightbox').style.display = 'flex';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+
+        document.querySelectorAll('input[name="shade"]').forEach(input => {
+            input.addEventListener('change', updateMainImage);
+        });
+
+        updateMainImage();
+    </script>
 
     <section class="messenger-container">
         <div class="messenger-container__icon" id="toggleIcon">
