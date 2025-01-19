@@ -1038,7 +1038,8 @@ nav {
     display: flex;
     object-fit: cover;
     height: 100%;
-    width: 100%;
+    width: 40%;
+    align-items: center;
 }
 
 .catalog-filter {
