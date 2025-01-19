@@ -41,13 +41,6 @@
     </nav>
     <div class="header__menu-person">
         <a href="" class="header__menu-person-link">
-            <img src="images/icons/search.svg" alt="Иконка поиска">
-        </a>
-        <a href="" class="header__menu-person-link">
-            <img src="images/icons/heart.svg" alt="Иконка сердца">
-            <p class="header__menu-person-link-text">221</p>
-        </a>
-        <a href="" class="header__menu-person-link">
             <img src="images/icons/bag.svg" alt="Иконка корзины-сумки">
             <p class="header__menu-person-link-text">21</p>
         </a>
@@ -63,8 +56,6 @@
     <section class="product-item">
         <div class="product-item__content">
             <div class="product-item__images">
-                <img id="main-image" src="images/flowers/11.31.00_f360ef16.jpg" alt="Изображение композиции синей"
-                     class="product-item__image" onclick="openLightbox(this);">
                 <div class="product-item__gallery">
                     <div class="product-item__gallery-wrapper" onclick="openLightbox(this)">
                         <img src="images/flowers/11.31.00_f360ef16.jpg" alt="Изображение композиции синей"
@@ -77,6 +68,9 @@
                         <p class="product-item__caption">Розовая</p>
                     </div>
                 </div>
+                <img id="main-image" src="images/flowers/11.31.00_f360ef16.jpg" alt="Изображение композиции синей"
+                     class="product-item__image" onclick="openLightbox(this);">
+
             </div>
             <div class="product-item__description">
                 <h1 class="product-item__title">Композиция №2</h1>
@@ -152,15 +146,17 @@
                         </p>
                     </div>
                 </div>
-                <div class="product-item__add-postcards">
-                    <hr>
-                    <div class="product-item__add-postcard-list">
+                <div class="product-item__add">
+                    <hr class="product-item__add-hr">
+                    <p class="product-item__title" id="toggle-postcards">Добавить открытку</p>
+                    <div class="product-item__add-list">
                         <div class="product-item__add-postcard">
                             <img class="product-item__add-postcard-image" alt="Открытка"
                                  src="images/flowers/postcard-6.jpg">
                             <div class="product-item__add-postcard-description">
                                 <p class="product-item__add-postcard-title">Открытка-карточка</p>
                                 <p class="product-item__add-postcard-price">50</p>
+                                <a href="#" class="product-item__add-link">Добавить к букету</a>
                             </div>
                         </div>
                         <div class="product-item__add-postcard">
@@ -169,6 +165,7 @@
                             <div class="product-item__add-postcard-description">
                                 <p class="product-item__add-postcard-title">Открытка-карточка</p>
                                 <p class="product-item__add-postcard-price">60</p>
+                                <a href="#" class="product-item__add-link">Добавить к букету</a>
                             </div>
                         </div>
                         <div class="product-item__add-postcard">
@@ -181,12 +178,12 @@
                             </div>
                         </div>
                         <div class="product-item__postcard-text">
-                            <p class="product-item__postcard-text">Текст открытки</p>
+                            <p class="product-item__add-postcard-title">Текст открытки</p>
                             <textarea class="product-item__postcard-input"
                                       placeholder="Введите текст открытки"></textarea>
                         </div>
                     </div>
-                    <hr>
+                    <hr class="product-item__add-hr">
                 </div>
 
                 <div class="product__links">
@@ -194,7 +191,67 @@
                 </div>
             </div>
         </div>
+
+
     </section>
+    <section class="recommendations">
+        <h2 class="recommendations__title">Рекомендуем</h2>
+        <div class="recommendations__container">
+            <article class="product__item">
+                <img class="product__image" alt="Картинка к товару" src="images/flowers/11.31.00_f360ef16.jpg">
+                <div class="product__description">
+                    <p class="product__name">Композиция №2</p>
+                    <div class="product__prices">
+                        <p class="product__price product__price--discounted">3500</p>
+                    </div>
+                    <div class="product__links">
+                        <a href="#" class="product__link product__link--details">Подробнее</a>
+                        <a href="#" class="product__link product__link--cart">В корзину</a>
+                    </div>
+                </div>
+            </article>
+            <article class="product__item">
+                <img class="product__image" alt="Картинка к товару" src="images/flowers/14.23.43_4a4b2f0e.jpg">
+                <div class="product__description">
+                    <p class="product__name">Букет №21</p>
+                    <div class="product__prices">
+                        <p class="product__price product__price--discounted">3100</p>
+                    </div>
+                    <div class="product__links">
+                        <a href="#" class="product__link product__link--details">Подробнее</a>
+                        <a href="#" class="product__link product__link--cart">В корзину</a>
+                    </div>
+                </div>
+            </article>
+            <article class="product__item">
+                <img class="product__image" alt="Картинка к товару" src="images/flowers/14.23.42_37825df9.jpg">
+                <div class="product__description">
+                    <p class="product__name">Букет №52</p>
+                    <div class="product__prices">
+                        <p class="product__price product__price--discounted">3500</p>
+                    </div>
+                    <div class="product__links">
+                        <a href="#" class="product__link product__link--details">Подробнее</a>
+                        <a href="#" class="product__link product__link--cart">В корзину</a>
+                    </div>
+                </div>
+            </article>
+            <article class="product__item">
+                <img class="product__image" alt="Картинка к товару" src="images/flowers/14.23.15_599df81f.jpg">
+                <div class="product__description">
+                    <p class="product__name">Композиция №5</p>
+                    <div class="product__prices">
+                        <p class="product__price product__price--discounted">2200</p>
+                    </div>
+                    <div class="product__links">
+                        <a href="#" class="product__link product__link--details">Подробнее</a>
+                        <a href="#" class="product__link product__link--cart">В корзину</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    <script src="js/addList.js"></script>
 
     <div id="lightbox" class="lightbox" onclick="closeLightbox();">
         <span class="lightbox__close">&times;</span>
@@ -202,45 +259,7 @@
         <p class="lightbox__caption" id="lightbox-caption"></p>
     </div>
 
-    <script>
-        const mainImage = document.getElementById('main-image');
-        const galleryImages = document.querySelectorAll('.product-item__gallery-image');
-
-        // Функция для обновления заглавного изображения
-        function updateMainImage() {
-            const selectedShade = document.querySelector('input[name="shade"]:checked').value;
-
-            galleryImages.forEach(image => {
-                if (image.dataset.shade === selectedShade) {
-                    mainImage.src = image.src;
-                    mainImage.alt = image.alt;
-                }
-            });
-        }
-
-        function openLightbox(wrapper) {
-            const lightboxImage = document.getElementById('lightbox-image');
-            const lightboxCaption = document.getElementById('lightbox-caption');
-
-            const image = wrapper.querySelector('.product-item__gallery-image');
-            const shade = image.dataset.shade;
-
-            lightboxImage.src = image.src;
-            lightboxCaption.textContent = `Композиция №2. ${shade.charAt(0).toUpperCase() + shade.slice(1)}.`;
-
-            document.getElementById('lightbox').style.display = 'flex';
-        }
-
-        function closeLightbox() {
-            document.getElementById('lightbox').style.display = 'none';
-        }
-
-        document.querySelectorAll('input[name="shade"]').forEach(input => {
-            input.addEventListener('change', updateMainImage);
-        });
-
-        updateMainImage();
-    </script>
+    <script src="js/productItem.js"></script>
 
     <section class="messenger-container">
         <div class="messenger-container__icon" id="toggleIcon">
