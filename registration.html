@@ -15,7 +15,7 @@
     <link rel="icon" type="image/png" href="images/logotype.jpg">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <title>Авторизация</title>
+    <title>Регистрация</title>
 </head>
 <body>
 
@@ -54,68 +54,41 @@
 <main>
 
     <section class="authorization">
-        <h1 class="authorization__title">Авторизация</h1>
+        <h1 class="authorization__title">Регистрация</h1>
         <div class="authorization__container">
-            <form id="authorization-form">
-                <div class="authorization__selector">
-                    <button type="button" id="phone-option" class="active">Телефон</button>
-                    <button type="button" id="email-option">Электронная почта</button>
-                </div>
+            <form id="registration-form">
+                <div class="authorization__option">
+                    <label for="first-name">Имя:</label>
+                    <input type="text" id="first-name" name="first-name" required placeholder="Введите ваше имя">
 
-                <div id="phone-input" class="authorization__option">
-                    <label for="phone">Телефон:</label>
-                    <input type="tel" id="phone" name="phone" required placeholder="+7 (___) ___-__-__">
-                    <label for="phone-password">Пароль:</label>
-                    <input type="password" id="phone-password" name="phone-password" required placeholder="Введите пароль">
-                    <div class="authorization__option-control-group">
-                        <button type="submit">Войти в личный кабинет</button>
-                        <div class="authorization__option-control">
-                            <a href="" >Не помню пароль</a>
-                            <a href="registration.html" >Регистрация</a>
-                        </div>
-                    </div>
+                    <label for="last-name">Фамилия:</label>
+                    <input type="text" id="last-name" name="last-name" required placeholder="Введите вашу фамилию">
 
-
-                </div>
-
-                <div id="email-input" class="authorization__option" style="display: none;">
                     <label for="email">Электронная почта:</label>
                     <input type="email" id="email" name="email" required placeholder="example@mail.com">
-                    <label for="email-password">Пароль:</label>
-                    <input type="password" id="email-password" name="email-password" required placeholder="Введите пароль">
+
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="+7 (___) ___-__-__">
+
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" name="password" required placeholder="Введите пароль">
+
+                    <label for="confirm-password">Подтверждение пароля:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required placeholder="Подтвердите пароль">
+
                     <div class="authorization__option-control-group">
-                        <button type="submit">Войти в личный кабинет</button>
+                        <button type="submit">Зарегистрироваться</button>
                         <div class="authorization__option-control">
-                            <a href="" >Не помню пароль</a>
-                            <a href="registration.html" >Регистрация</a>
+                            <a href="">Не помню пароль</a>
+                            <a href="authorization.html">Авторизация</a>
                         </div>
                     </div>
-
                 </div>
             </form>
         </div>
     </section>
 
-    <script>
-        const phoneOption = document.getElementById('phone-option');
-        const emailOption = document.getElementById('email-option');
-        const phoneInput = document.getElementById('phone-input');
-        const emailInput = document.getElementById('email-input');
 
-        phoneOption.addEventListener('click', function() {
-            phoneInput.style.display = 'flex';
-            emailInput.style.display = 'none';
-            phoneOption.classList.add('active');
-            emailOption.classList.remove('active');
-        });
-
-        emailOption.addEventListener('click', function() {
-            emailInput.style.display = 'flex';
-            phoneInput.style.display = 'none';
-            emailOption.classList.add('active');
-            phoneOption.classList.remove('active');
-        });
-    </script>
 
 
 
@@ -192,3 +165,4 @@
 
 </body>
 </html>
+

@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="116b81a2-5529-46e1-b942-eb3d230c41e7" name="Changes" comment="fit: небольшие правки по стилю">
-      <change afterPath="$PROJECT_DIR$/authorization.html" afterDir="false" />
+    <list default="true" id="116b81a2-5529-46e1-b942-eb3d230c41e7" name="Changes" comment="feat: шаблон входа">
+      <change afterPath="$PROJECT_DIR$/registration.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authorization.html" beforeDir="false" afterPath="$PROJECT_DIR$/authorization.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/outlines.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/outlines.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,22 +47,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/gonos/WebstormProjects/web-lavender&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.index.html.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/gonos/lavanda-partizansk",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\gonos\WebstormProjects\web-lavender" />
@@ -85,7 +85,7 @@
       <updated>1736402047346</updated>
       <workItem from="1736402048409" duration="45260000" />
       <workItem from="1736902948713" duration="88297000" />
-      <workItem from="1737276045608" duration="6949000" />
+      <workItem from="1737276045608" duration="12526000" />
     </task>
     <task id="LOCAL-00001" summary="feat: добавила хедер и футер">
       <option name="closed" value="true" />
@@ -207,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737213430551</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="feat: шаблон входа">
+      <option name="closed" value="true" />
+      <created>1737341327337</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1737341327337</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,6 +230,7 @@
     <MESSAGE value="feat: категории товаров, сортировка" />
     <MESSAGE value="feat: заставка при перехоже на другую страницу" />
     <MESSAGE value="fit: небольшие правки по стилю" />
-    <option name="LAST_COMMIT_MESSAGE" value="fit: небольшие правки по стилю" />
+    <MESSAGE value="feat: шаблон входа" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: шаблон входа" />
   </component>
 </project>

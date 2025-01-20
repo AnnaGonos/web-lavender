@@ -426,7 +426,7 @@ nav {
     font-weight: 400;
 }
 
-#authorization-form {
+#authorization-form, #registration-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -442,7 +442,7 @@ nav {
 
 .authorization__selector,
 .authorization__option {
-    width: 40%;
+    width: 30%;
 }
 
 
@@ -454,33 +454,56 @@ nav {
 }
 
 .authorization__selector button {
-    /*padding: 10px;*/
     cursor: pointer;
     border: none;
     background-color: #ffffff;
-
     padding: 0;
-    /*border-radius: 5px;*/
+}
+
+.authorization__option-control-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.authorization__option-control {
+    display: flex;
+    gap: 40px;
+}
+
+.authorization__option-control a {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    border-bottom: black solid 1px;
+}
+
+.authorization__option-control a:hover {
+    display: flex;
+    align-items: center;
+    color: #6C4795;
+    font-weight: 400;
+    border-bottom: #6C4795 solid 1px;
 }
 
 .authorization__option button {
+    display: flex;
+    width: fit-content;
     text-transform: uppercase;
     background: #6C4795;
     color: white;
     border: #6C4795 1px solid;
     border-radius: 8px;
-    padding: 8px;
-    margin-top: 20px;
+    padding: 8px 15px;
 }
 
-.authorization__option:hover button {
+.authorization__option button:hover {
     text-transform: uppercase;
     background: #D5B8F1;
     color: #000000;
     border: #000000 1px solid;
     border-radius: 8px;
-    padding: 8px;
-    margin-top: 20px;
 }
 
 .authorization__selector button.active {
@@ -1482,6 +1505,15 @@ nav {
         width: auto;
     }
 
+    .authorization__selector,
+    .authorization__option {
+        width: 40%;
+    }
+
+    .authorization__option-control {
+        flex-direction: column;
+        gap: 20px;
+    }
 
     .about-us__image {
         order: 2;
@@ -1505,6 +1537,11 @@ nav {
 
     .header__logo {
         padding-bottom: 10px;
+    }
+
+    .authorization__selector,
+    .authorization__option {
+        width: 50%;
     }
 
     .header__menu {
@@ -1559,7 +1596,7 @@ nav {
     }
 
     .slider, .sales, .online, .catalog, .about-us, .blog, .blog-article, .delivery, .catalog-filter,
-    .product, .product-item, .recommendations, .faq, .care {
+    .product, .product-item, .recommendations, .faq, .care, .authorization {
         padding: 0 20px;
     }
 
@@ -1780,6 +1817,11 @@ nav {
 
     .delivery__content {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .authorization__selector,
+    .authorization__option {
+        width: 90%;
     }
 }
 
