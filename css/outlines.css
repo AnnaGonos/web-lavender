@@ -1,4 +1,4 @@
-h1, h2, h3, h4, h5, p, a, label, input, option, span, select, textarea {
+h1, h2, h3, h4, h5, p, a, label, input, option, span, select, textarea, button {
     font-weight: 300;
     font-family: 'Raleway', sans-serif;
     color: #000000;
@@ -21,7 +21,7 @@ h4 {
     font-size: 22px;
 }
 
-h5, p, a, label, input, option, span, select, textarea {
+h5, p, a, label, input, option, span, select, button, textarea {
     font-size: 16px;
 }
 
@@ -34,6 +34,15 @@ a {
 b {
     font-weight: 500;
 }
+
+/*button {*/
+/*    text-transform: uppercase;*/
+/*    background: #6C4795;*/
+/*    color: white;*/
+/*    border: none;*/
+/*    border-radius: 8px;*/
+/*    padding: 8px;*/
+/*}*/
 
 html, body {
     margin: 0;
@@ -247,7 +256,7 @@ nav {
 }
 
 .sales, .slider, .online, .catalog, .about-us, .blog, .blog-article, .delivery, .catalog-filter,
-.product, .recommendations, .faq, .care {
+.product, .recommendations, .faq, .care, .authorization {
     padding: 0 40px;
 }
 
@@ -400,7 +409,7 @@ nav {
 }
 
 .about-us, .sales, .online, .catalog, .blog, .blog-article, .about-us__content, .delivery, .catalog-filter,
-.recommendations, .faq, .care {
+.recommendations, .faq, .care, .authorization {
     display: flex;
     flex-direction: column;
     gap: 60px;
@@ -408,12 +417,81 @@ nav {
 
 .sales__title, .online__title, .catalog__title, .product__name, .catalog__name, .faq__title, .about-us__title,
 .about-us__description-item-title, .catalog-filter__prices, .blog__title, .care__title, .care__subtitle,
-.blog-article__header, .delivery__title, .messenger-container__title, .product-item__title, .recommendations__title {
+.blog-article__header, .delivery__title, .messenger-container__title, .product-item__title, .recommendations__title,
+.authorization__title {
     display: flex;
     flex-direction: column;
     text-transform: uppercase;
     width: 100%;
     font-weight: 400;
+}
+
+#authorization-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.authorization__option input {
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid #000000;
+}
+
+.authorization__selector,
+.authorization__option {
+    width: 40%;
+}
+
+
+.authorization__selector {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.authorization__selector button {
+    /*padding: 10px;*/
+    cursor: pointer;
+    border: none;
+    background-color: #ffffff;
+
+    padding: 0;
+    /*border-radius: 5px;*/
+}
+
+.authorization__option button {
+    text-transform: uppercase;
+    background: #6C4795;
+    color: white;
+    border: #6C4795 1px solid;
+    border-radius: 8px;
+    padding: 8px;
+    margin-top: 20px;
+}
+
+.authorization__option:hover button {
+    text-transform: uppercase;
+    background: #D5B8F1;
+    color: #000000;
+    border: #000000 1px solid;
+    border-radius: 8px;
+    padding: 8px;
+    margin-top: 20px;
+}
+
+.authorization__selector button.active {
+    color: #000000;
+    font-weight: 500;
+}
+
+.authorization__option {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .sales__container, .online__container, .recommendations__container, .product, .faq__container, .care__container {
@@ -445,14 +523,14 @@ nav {
 .product-item__gallery {
     display: flex;
     flex-direction: column;
-    gap: 2%;
+    gap: 8px;
     width: 20%;
 }
 
 .product-item__gallery-image {
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: 200px;
     cursor: pointer;
     opacity: 0.6;
     border-radius: 8px;
@@ -466,16 +544,15 @@ nav {
 .product-item__gallery-wrapper {
     position: relative;
     width: 100%;
-    height: 20%;
 }
 
 .product-item__caption {
     position: absolute;
-    bottom: 5px;
+    bottom: 10px;
     left: 5px;
     color: #ffffff;
     background-color: #6C4795;
-    padding: 5px;
+    padding: 3px 5px;
     border-radius: 8px;
     font-size: 12px;
 }
@@ -852,7 +929,6 @@ nav {
     object-fit: cover;
     border-radius: 8px;
 }
-
 
 
 .product-item__add-postcard {
@@ -1590,14 +1666,14 @@ nav {
     .product-item__images {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;
     }
 
 
     .product-item__gallery {
         display: flex;
         flex-direction: row;
-        gap: 2%;
+        gap: 10px;
         height: 100px;
         width: 100%;
         order: 1;
@@ -1620,6 +1696,7 @@ nav {
     .product-item__gallery-image:hover {
         opacity: 1;
     }
+
     .product-item__gallery-wrapper {
         position: relative;
         width: 100%;

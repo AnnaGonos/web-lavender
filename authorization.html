@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <meta name="keywords" content="Лаванда, Партизанск, флористика, цветы, букеты, подарки, доставка цветов, магазин
+    цветов, флористический магазин, цветочная лавка, флористические услуги, оформление мероприятий, цветы в Партизанске,
+    цветы из Партизанска, магазин Лаванда">
+    <meta name="description" content="Магазин флористики Лаванда в Партизанске предлагает широкий ассортимент свежих
+    цветов, уникальных букетов и флористических композиций. Мы предоставляем качественные услуги по доставке цветов и
+    оформлению мероприятий. Выбирайте самые красивые и свежие цветы для любого повода!">
+    <link rel="stylesheet" href="css/outlines.css">
+    <link rel="icon" type="image/png" href="images/logotype.jpg">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <title>Авторизация</title>
+</head>
+<body>
+
+<header class="header" id="header">
+    <a href="index.html" class="header__logo">
+        <img src="images/logo.jpg" alt="Основное изображение логотипа">
+    </a>
+    <nav class="header__menu">
+        <ul class="header__menu-list">
+            <li class="header__menu-item"><a href="catalog.html" class="header__menu-link">Каталог</a></li>
+            <li class="header__menu-item">
+                <p class="header__menu-link">Клиентам</p>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item"><a href="delivery.html" class="dropdown-link">Доставка</a></li>
+                    <li class="dropdown-item"><a href="faq.html" class="dropdown-link">Вопрос-ответ</a></li>
+                    <li class="dropdown-item"><a href="reviews.html" class="dropdown-link">Отзывы</a></li>
+                    <li class="dropdown-item"><a href="care.html" class="dropdown-link">Уход за букетом</a></li>
+                </ul>
+            </li>
+            <li class="header__menu-item"><a href="blog.html" class="header__menu-link">Блог</a></li>
+            <li class="header__menu-item"><a href="contacts.html" class="header__menu-link">Контакты</a></li>
+        </ul>
+    </nav>
+    <div class="header__menu-person">
+        <a href="" class="header__menu-person-link">
+            <img src="images/icons/bag.svg" alt="Иконка корзины-сумки">
+            <p class="header__menu-person-link-text">21</p>
+        </a>
+        <a href="" class="header__menu-person-link">
+            <img src="images/icons/person.svg" alt="Иконка личного кабинета">
+        </a>
+    </div>
+</header>
+<script src="js/scrollTop.js"></script>
+<script src="js/activeMenu.js"></script>
+<main>
+
+    <section class="authorization">
+        <h1 class="authorization__title">Авторизация</h1>
+        <div class="authorization__container">
+            <form id="authorization-form">
+                <div class="authorization__selector">
+                    <button type="button" id="phone-option" class="active">Телефон</button>
+                    <button type="button" id="email-option">Электронная почта</button>
+                </div>
+
+                <div id="phone-input" class="authorization__option">
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="+7 (___) ___-__-__">
+                    <label for="phone-password">Пароль:</label>
+                    <input type="password" id="phone-password" name="phone-password" required placeholder="Введите пароль">
+                    <button type="submit">Вход</button>
+                </div>
+
+                <div id="email-input" class="authorization__option" style="display: none;">
+                    <label for="email">Электронная почта:</label>
+                    <input type="email" id="email" name="email" required placeholder="example@mail.com">
+                    <label for="email-password">Пароль:</label>
+                    <input type="password" id="email-password" name="email-password" required placeholder="Введите пароль">
+                    <button type="submit">Вход</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        const phoneOption = document.getElementById('phone-option');
+        const emailOption = document.getElementById('email-option');
+        const phoneInput = document.getElementById('phone-input');
+        const emailInput = document.getElementById('email-input');
+
+        phoneOption.addEventListener('click', function() {
+            phoneInput.style.display = 'flex';
+            emailInput.style.display = 'none';
+            phoneOption.classList.add('active');
+            emailOption.classList.remove('active');
+        });
+
+        emailOption.addEventListener('click', function() {
+            emailInput.style.display = 'flex';
+            phoneInput.style.display = 'none';
+            emailOption.classList.add('active');
+            phoneOption.classList.remove('active');
+        });
+    </script>
+
+
+
+    <section class="messenger-container">
+        <div class="messenger-container__icon" id="toggleIcon">
+            <img class="messenger-container__icon-item" id="firstIcon" src="images/icons/chat-right-text.svg"
+                 alt="Иконка мессенджеров">
+            <img class="messenger-container__icon-item" id="secondIcon" src="images/icons/x-lg.svg"
+                 alt="Иконка мессенджеров">
+        </div>
+        <div class="messenger-container__links" id="linksContainer">
+            <div class="messenger-container__content">
+                <p class="messenger-container__title">Требуется помощь?</p>
+                <p>Обращайтесь к нам любым удобным для вас способом!</p>
+            </div>
+            <a href="https://t.me/yourtelegram" class="messenger-container__link-item">Telegram</a>
+            <a href="https://wa.me/yourwhatsapp" class="messenger-container__link-item">WhatsApp</a>
+            <p class="messenger-container__link-item">+7 914 662-79-11</p>
+
+        </div>
+    </section>
+    <script src="js/messenger.js"></script>
+    <div id="loader" class="loader">
+        <img src="https://media.tenor.com/_4kl3WUiiQUAAAAi/peach-cat.gif" alt="Загрузка..."/>
+    </div>
+
+    <script src="js/cat.js"></script>
+</main>
+
+<footer class="footer">
+    <hr class="footer__hr-top">
+    <div class="footer__container">
+        <a href="index.html" class="footer__logo">
+            <img src="images/logo.jpg" alt="Основное изображение логотипа" class="footer__logo-image">
+        </a>
+        <div class="footer__description">
+            <div class="footer__inform">
+                <div class="footer__address">
+                    <img src="images/icons/geo-alt-fill.svg" alt="Иконка карты" class="footer__address-icons">
+                    <a href="" class="footer__address-link">г. Партизанск, ул. Замараева, 5</a>
+                </div>
+
+                <p class="footer__working-hours">Работаем с 8:00-19:00 <br>Доставка с 8:30-18:00</p>
+
+                <div class="footer__telephone">
+                    <p class="footer__telephone-number">+7 914 662-79-11</p>
+                    <p class="footer__telephone-description">Ответим на все вопросы!</p>
+                </div>
+            </div>
+            <div class="footer__social-networks">
+                <a href="" class="footer__social-network-item">Vk</a>
+                <a href="" class="footer__social-network-item">Telegram</a>
+                <a href="" class="footer__social-network-item">WhatsApp</a>
+                <a href="" class="footer__social-network-item">
+                    <!--                    <del>(Запрещенограм)</del> -->
+                    Instagram*</a>
+                <p class="footer__social-network-item complement-text">* принадлежит компании Meta, которая признана
+                    экстремистской и запрещена на территории РФ</p>
+            </div>
+        </div>
+    </div>
+    <hr class="footer__hr-bottom">
+    <div class="footer__bottom">
+        <p class="footer__conf">
+            © 2018 - 2025 Цветочный магазин "Лаванда". Все права защищены.
+        </p>
+        <a href="" class="footer__web-developer">
+            <p>Веб-сайт разработан
+                <ins>gonosanna</ins>
+            </p>
+        </a>
+    </div>
+</footer>
+
+</body>
+</html>
