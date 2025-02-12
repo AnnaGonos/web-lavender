@@ -4,10 +4,14 @@ const header = document.getElementById("header");
 window.addEventListener("scroll", function() {
     const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
-    if (currentScroll > lastScrollTop) {
-        header.classList.add("hidden");
+    if (window.innerWidth <= 600) {
+        header.classList.add("fixed");
     } else {
-        header.classList.remove("hidden");
+        if (currentScroll > lastScrollTop) {
+            header.classList.add("hidden");
+        } else {
+            header.classList.remove("hidden");
+        }
     }
 
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
@@ -18,14 +22,15 @@ document.addEventListener("DOMContentLoaded", function() {
     const dropdownMenu = document.querySelector('.dropdown-menu');
 
     clientLink.addEventListener('click', function(event) {
-        event.preventDefault(); // Предотвращаем переход по ссылке
+        event.preventDefault();
         dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
     });
 
-    // document.addEventListener("click", function(event) {
-    //     if (!clientLink.contains(event.target) && !dropdownMenu.contains(event.target)) {
-    //         dropdownMenu.style.display = 'none'; // Скрыть подменю, если кликнули вне его
-    //     }
-    // });
+    document.addEventListener("click", function(event) {
+        if (!clientLink.contains(event.target) && !dropdownMenu.contains(event.target)) {
+            dropdownMenu.style.display = 'none';
+        }
+    });
 });
+
 

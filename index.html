@@ -22,8 +22,12 @@
     <a href="#" class="header__logo">
         <img src="images/logo.jpg" alt="Основное изображение логотипа">
     </a>
+    <div class="header__list">
+        <img id="header-list" src="images/icons/list.svg" alt="" class="header__list-item">
+        <img id="header-cancel" src="images/icons/x-lg.svg" alt="" class="header__list-item">
+    </div>
     <nav class="header__menu">
-        <ul class="header__menu-list">
+        <ul class="header__menu-list" id="menu-list">
             <li class="header__menu-item"><a href="catalog.html"
                                              class="header__menu-link">Каталог</a></li>
             <li class="header__menu-item "><p class="header__menu-link">Клиентам</p>
@@ -40,13 +44,20 @@
     </nav>
     <div class="header__menu-person">
         <a href="" class="header__menu-person-link">
-            <img src="images/icons/bag.svg" alt="Иконка корзины-сумки">
-            <p class="header__menu-person-link-text">21</p>
+            <img src="images/icons/search.svg" alt="" class="header__menu-person-icon">
         </a>
         <a href="" class="header__menu-person-link">
-            <img src="images/icons/person.svg" alt="Иконка личного кабинета">
+            <img src="images/icons/heart.svg" alt="" class="header__menu-person-icon">
+        </a>
+        <a href="" class="header__menu-person-link">
+            <img src="images/icons/bag.svg" alt="Иконка корзины-сумки" class="header__menu-person-icon">
+            <p class="header__menu-person-link-count">21</p>
+        </a>
+        <a href="" class="header__menu-person-link">
+            <img src="images/icons/person.svg" alt="Иконка личного кабинета"  class="header__menu-person-icon">
         </a>
     </div>
+    <script src="js/menuList.js"></script>
 </header>
 <div id="loader" class="loader">
     <img src="https://media.tenor.com/_4kl3WUiiQUAAAAi/peach-cat.gif" alt="Загрузка..."/>
@@ -384,7 +395,7 @@
 
     </section>
 
-    <section class="messenger-container">
+    <div class="messenger-container">
         <div class="messenger-container__icon" id="toggleIcon">
             <img class="messenger-container__icon-item" id="firstIcon" src="images/icons/chat-right-text.svg"
                  alt="Иконка мессенджеров">
@@ -402,7 +413,7 @@
             <p class="messenger-container__link-item">+7 914 662-79-11</p>
 
         </div>
-    </section>
+    </div>
     <script src="js/messenger.js"></script>
 
 </main>

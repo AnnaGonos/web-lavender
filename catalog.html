@@ -19,14 +19,18 @@
 </head>
 <body>
 <header class="header" id="header">
-    <a href="index.html" class="header__logo">
+    <a href="#" class="header__logo">
         <img src="images/logo.jpg" alt="Основное изображение логотипа">
     </a>
+    <div class="header__list">
+        <img id="header-list" src="images/icons/list.svg" alt="" class="header__list-item">
+        <img id="header-cancel" src="images/icons/x-lg.svg" alt="" class="header__list-item">
+    </div>
     <nav class="header__menu">
-        <ul class="header__menu-list">
-            <li class="header__menu-item"><a href="catalog.html" class="header__menu-link">Каталог</a></li>
-            <li class="header__menu-item">
-                <p class="header__menu-link">Клиентам</p>
+        <ul class="header__menu-list" id="menu-list">
+            <li class="header__menu-item"><a href="catalog.html"
+                                             class="header__menu-link">Каталог</a></li>
+            <li class="header__menu-item "><p class="header__menu-link">Клиентам</p>
                 <ul class="dropdown-menu">
                     <li class="dropdown-item"><a href="delivery.html" class="dropdown-link">Доставка</a></li>
                     <li class="dropdown-item"><a href="faq.html" class="dropdown-link">Вопрос-ответ</a></li>
@@ -35,18 +39,25 @@
                 </ul>
             </li>
             <li class="header__menu-item"><a href="blog.html" class="header__menu-link">Блог</a></li>
-            <li class="header__menu-item"><a href="contacts.html" class="header__menu-link">Контакты</a></li>
+            <li class="header__menu-item"><a href="" class="header__menu-link">Контакты</a></li>
         </ul>
     </nav>
     <div class="header__menu-person">
         <a href="" class="header__menu-person-link">
-            <img src="images/icons/bag.svg" alt="Иконка корзины-сумки">
-            <p class="header__menu-person-link-text">21</p>
+            <img src="images/icons/search.svg" alt="" class="header__menu-person-icon">
         </a>
         <a href="" class="header__menu-person-link">
-            <img src="images/icons/person.svg" alt="Иконка личного кабинета">
+            <img src="images/icons/heart.svg" alt="" class="header__menu-person-icon">
+        </a>
+        <a href="" class="header__menu-person-link">
+            <img src="images/icons/bag.svg" alt="Иконка корзины-сумки" class="header__menu-person-icon">
+            <p class="header__menu-person-link-count">21</p>
+        </a>
+        <a href="" class="header__menu-person-link">
+            <img src="images/icons/person.svg" alt="Иконка личного кабинета"  class="header__menu-person-icon">
         </a>
     </div>
+    <script src="js/menuList.js"></script>
 </header>
 <script src="js/scrollTop.js"></script>
 <script src="js/activeMenu.js"></script>

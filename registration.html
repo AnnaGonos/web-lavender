@@ -15,8 +15,7 @@
     <link rel="icon" type="image/png" href="images/logotype.jpg">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <title>Доставка букетов и цветочных композиций на дом в Партизанске</title>
+    <title>Регистрация</title>
 </head>
 <body>
 <header class="header" id="header">
@@ -63,81 +62,45 @@
 <script src="js/scrollTop.js"></script>
 <script src="js/activeMenu.js"></script>
 <main>
-    <section class="delivery">
-        <h1 class="delivery__title">Доставка цветов в Партизанске</h1>
-        <div class="delivery__header-images">
-            <div class="image-container">
-                <img class="delivery__header-image" src="images/flowers/14.23.15_599df81f.jpg"
-                     alt="Заставка к разделу доставка">
-            </div>
-            <div class="image-container">
-                <img class="delivery__header-image" src="images/flowers/14.33.29_142d646e.jpg"
-                     alt="Заставка к разделу доставка">
-            </div>
-            <div class="image-container">
-                <img class="delivery__header-image" src="images/flowers/14.27.49_d377ab60.jpg"
-                     alt="Заставка к разделу доставка">
-            </div>
+
+    <section class="authorization">
+        <h1 class="authorization__title">Регистрация</h1>
+        <div class="authorization__container">
+            <form id="registration-form">
+                <div class="authorization__option">
+                    <label for="first-name">Имя:</label>
+                    <input type="text" id="first-name" name="first-name" required placeholder="Введите ваше имя">
+
+                    <label for="last-name">Фамилия:</label>
+                    <input type="text" id="last-name" name="last-name" required placeholder="Введите вашу фамилию">
+
+                    <label for="email">Электронная почта:</label>
+                    <input type="email" id="email" name="email" required placeholder="example@mail.com">
+
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="+7 (___) ___-__-__">
+
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" name="password" required placeholder="Введите пароль">
+
+                    <label for="confirm-password">Подтверждение пароля:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required placeholder="Подтвердите пароль">
+
+                    <div class="authorization__option-control-group">
+                        <button type="submit">Зарегистрироваться</button>
+                        <div class="authorization__option-control">
+                            <a href="">Не помню пароль</a>
+                            <a href="authorization.html">Авторизация</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
-
-        <div class="delivery__content">
-            <div class="delivery__text">
-                <p class="delivery__text-item"><b>Доставляем</b> с 8:30 до 18:00 в выбранный вами интервал времени <br>
-                    <b>Принимаем заказы ежедневно</b> с 8:00 до 19:00.</p>
-                <p class="delivery__text-item">В праздничные дни стоимость доставки и время ожидания могут
-                    увеличиться.</p>
-            </div>
-
-            <div class="delivery__text-addition">
-                <img src="images/icons/exclamation-circle.svg" alt="Иконка уведомления" class="delivery__icon">
-                <p class="delivery__text-item delivery__text-item--addition">Если вы делаете заказ позже 16:30, то
-                    доставка возможна лишь на следующий день.</p>
-
-            </div>
-
-            <div class="delivery__text">
-                <h2 class="delivery__title">Самовывоз</h2>
-                <p class="delivery__text-item">Вы можете забрать заказ самостоятельно в нашем магазине после получения
-                    уведомления о его готовности.</p>
-            </div>
-            <div class="delivery__text">
-                <h2 class="delivery__title">Доставка курьером</h2>
-                <p class="delivery__text-item">Стоимость доставки определяется индивидуально в зависимости от расстояния
-                    до адреса получателя. Узнать точную сумму можно в корзине при оформлении заказа или уточнив у нашего
-                    менеджера.</p>
-                <p class="delivery__text-item">При оформлении заказа укажите адрес и интервал времени, в который
-                    необходимо доставить букет. <br> Наша <b>стандартная доставка</b> осуществляется с интервалами в 2
-                    часа.
-                    Но если вам нужна доставка к определенному времени, то за <b>дополнительную плату (+150 ₽)</b>, вы
-                    можете указать точное время.</p>
-            </div>
-            <div class="delivery__text">
-                <h2 class="delivery__title">Упаковка</h2>
-                <p class="delivery__text-item">
-                    Упаковываем по вашем предподчтениям, которые вы указываете при оформлении заказа
-
-                </p>
-                <p class="delivery__text-item">
-                    К каждому букету при заказе прикладывается инструкция по уходу, чтобы вы могли продлить жизнь вашему
-                    букету. А по желанию вы можете включить открытку с вашим текстом и пожеланиями.
-                </p>
-
-            </div>
-            <div class="delivery__text">
-                <h2 class="delivery__title">Мы всегда готовы помочь</h2>
-                <p class="delivery__text-item">
-                    Если у вас остались вопросы, не стесняйтесь обращаться к нам любым удобным способом:
-                </p>
-                <p class="delivery__text-item">
-                    Позвоните по номеру +7 914 662-79-11 или напишите в Telegram или WhatsApp (все ссылки ниже).
-                </p>
-
-            </div>
-
-        </div>
-
-
     </section>
+
+
+
+
 
     <section class="messenger-container">
         <div class="messenger-container__icon" id="toggleIcon">
@@ -151,7 +114,6 @@
                 <p class="messenger-container__title">Требуется помощь?</p>
                 <p>Обращайтесь к нам любым удобным для вас способом!</p>
             </div>
-
             <a href="https://t.me/yourtelegram" class="messenger-container__link-item">Telegram</a>
             <a href="https://wa.me/yourwhatsapp" class="messenger-container__link-item">WhatsApp</a>
             <p class="messenger-container__link-item">+7 914 662-79-11</p>
@@ -159,7 +121,6 @@
         </div>
     </section>
     <script src="js/messenger.js"></script>
-
     <div id="loader" class="loader">
         <img src="https://media.tenor.com/_4kl3WUiiQUAAAAi/peach-cat.gif" alt="Загрузка..."/>
     </div>
@@ -214,3 +175,4 @@
 
 </body>
 </html>
+
