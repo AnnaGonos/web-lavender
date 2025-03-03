@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <meta name="keywords" content="Лаванда, Партизанск, флористика, цветы, букеты, подарки, доставка цветов, магазин
+    цветов, флористический магазин, цветочная лавка, флористические услуги, оформление мероприятий, цветы в Партизанске,
+    цветы из Партизанска, магазин Лаванда">
+    <meta name="description" content="Магазин флористики Лаванда в Партизанске предлагает широкий ассортимент свежих
+    цветов, уникальных букетов и флористических композиций. Мы предоставляем качественные услуги по доставке цветов и
+    оформлению мероприятий. Выбирайте самые красивые и свежие цветы для любого повода!">
+    <link rel="stylesheet" href="css/outlines.css">
+    <link rel="icon" type="image/png" href="images/logotype.jpg">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <title>Цветочный магазин "Лаванда" | Заказ букетов с доставкой на дом в Партизанске</title>
+</head>
+<body>
+<header class="header" id="header">
+    <a href="#" class="header__logo">
+        <img src="images/logo.jpg" alt="Основное изображение логотипа">
+    </a>
+    <div class="header__list">
+        <img id="header-list" src="images/icons/list.svg" alt="" class="header__list-item">
+        <img id="header-cancel" src="images/icons/x-lg.svg" alt="" class="header__list-item">
+    </div>
+    <nav class="header__menu">
+        <ul class="header__menu-list" id="menu-list">
+            <li class="header__menu-item"><a href="catalog.html"
+                                             class="header__menu-link">Каталог</a></li>
+            <li class="header__menu-item "><p class="header__menu-link">Клиентам</p>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item"><a href="delivery.html" class="dropdown-link">Доставка</a></li>
+                    <li class="dropdown-item"><a href="faq.html" class="dropdown-link">Вопрос-ответ</a></li>
+                    <li class="dropdown-item"><a href="reviews.html" class="dropdown-link">Отзывы</a></li>
+                    <li class="dropdown-item"><a href="care.html" class="dropdown-link">Уход за букетом</a></li>
+                </ul>
+            </li>
+            <li class="header__menu-item"><a href="blog.html" class="header__menu-link">Блог</a></li>
+            <li class="header__menu-item"><a href="" class="header__menu-link">Контакты</a></li>
+        </ul>
+    </nav>
+    <div class="header__menu-person">
+        <a href="" class="header__menu-person-link">
+            <img src="images/icons/search.svg" alt="" class="header__menu-person-icon">
+        </a>
+        <a href="" class="header__menu-person-link">
+            <img src="images/icons/heart.svg" alt="" class="header__menu-person-icon">
+        </a>
+        <a href="" class="header__menu-person-link">
+            <img src="images/icons/bag.svg" alt="Иконка корзины-сумки" class="header__menu-person-icon">
+            <p class="header__menu-person-link-count">21</p>
+        </a>
+        <a href="" class="header__menu-person-link">
+            <img src="images/icons/person.svg" alt="Иконка личного кабинета" class="header__menu-person-icon">
+        </a>
+    </div>
+    <script src="js/menuList.js"></script>
+</header>
+<script src="js/scrollTop.js"></script>
+<script src="js/activeMenu.js"></script>
+<main>
+    <section class="profile">
+        <h1 class="profile__title">Личный кабинет</h1>
+        <a href="" class="profile__title-florist">
+            Аккаунт флориста
+        </a>
+        <div class="profile__content">
+            <div class="profile__content-left">
+                <div class="profile__content-left-header">
+                    <img src="images/icons/person-fill.svg" class="profile__content-header-img" alt="">
+                    <p class="profile__content-name">Анна Гонос</p>
+                </div>
+                <hr class="profile__content-hr">
+                <div class="profile__content-left-content">
+                    <div class="profile__content-left-item" data-target="main">
+                        <img src="images/icons/house.svg" class="profile__content-left-img" alt="">
+                        <p class="profile__content-left-name">Главная</p>
+                    </div>
+                    <div class="profile__content-left-item" data-target="confidential">
+                        <img src="images/icons/shield-lock.svg" class="profile__content-left-img" alt="">
+                        <p class="profile__content-left-name">Личные данные</p>
+                    </div>
+                    <div class="profile__content-left-item" data-target="orders">
+                        <img src="images/icons/cart-check.svg" class="profile__content-left-img" alt="">
+                        <p class="profile__content-left-name">Мои заказы</p>
+                    </div>
+                    <div class="profile__content-left-item" data-target="loyalty">
+                        <img src="images/icons/credit-card.svg" class="profile__content-left-img" alt="">
+                        <p class="profile__content-left-name">Программа лояльности</p>
+                    </div>
+                    <div class="profile__content-left-item" data-target="logout">
+                        <img src="images/icons/door-open-fill.svg" class="profile__content-left-img" alt="">
+                        <p class="profile__content-left-name">Выход</p>
+                    </div>
+                </div>
+            </div>
+            <div class="profile__content-right">
+                <div class="profile__content-right_main">
+                    <div class="profile__content-right_main-row">
+                        <div class="profile__content-right_main-item">
+                            <div class="profile__content-right_item-header">
+                                <p class="profile__content-right_item-title">Доставки</p>
+                                <div class="profile__content-right_item-description">
+                                    <p class="profile__content-right_item-description_status">Оформлен</p>
+                                    <p class="profile__content-right_item-description_data">Придет 20 марта</p>
+                                </div>
+                            </div>
+                            <div class="profile__content-right_item-img">
+                                <img src="images/icons/truck.svg" class="profile__content-right_main-icon" alt="">
+                                <a href="" class="profile__content-right_item-description_link">Все ></a>
+                            </div>
+                        </div>
+                        <div class="profile__content-right_main-item">
+                            <div class="profile__content-right_item-header">
+                                <p class="profile__content-right_item-title">Баллы</p>
+                                <div class="profile__content-right_item-description">
+                                    <p>Программа лояльности</p>
+                                </div>
+                            </div>
+                            <div class="profile__content-right_item-img">
+                                <img src="images/icons/credit-card.svg" class="profile__content-right_main-icon" alt="">
+                                <a href="" class="profile__content-right_item-description_link">Подробнее ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile__content-right_main-row">
+                        <div class="profile__content-right_main-item">
+                            <div class="profile__content-right_item-header">
+                                <p class="profile__content-right_item-title">Избранное</p>
+                                <div class="profile__content-right_item-description">
+                                    <a href="" class="profile__content-right_item-description_link">Перейти к букетам</a>
+                                </div>
+                            </div>
+                            <div class="profile__content-right_item-img">
+                                <img src="images/icons/heart-fill.svg" class="profile__content-right_main-icon" alt="">
+                            </div>
+                        </div>
+                        <div class="profile__content-right_main-item">
+                            <div class="profile__content-right_item-header">
+                                <p class="profile__content-right_item-title">Покупки</p>
+                                <div class="profile__content-right_item-description">
+                                    <a href="" class="profile__content-right_item-description_link">Смотреть</a>
+                                </div>
+                            </div>
+                            <div class="profile__content-right_item-img">
+                                <img src="images/icons/cart-check.svg" class="profile__content-right_main-icon" alt="">
+                            </div>
+                        </div>
+                        <div class="profile__content-right_main-item">
+                            <div class="profile__content-right_item-header">
+                                <p class="profile__content-right_item-title">Ждут вашей оценки</p>
+                                <div class="profile__content-right_item-description">
+                                    <a href="" class="profile__content-right_item-description_link">Перейти к оценке</a>
+                                </div>
+                            </div>
+                            <div class="profile__content-right_item-img">
+                                <img src="images/icons/star-fill.svg" class="profile__content-right_main-icon" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile__content-right_main-row">
+                        <div class="profile__content-right_main-item">
+                            <div class="profile__content-right_item-header">
+                                <p class="profile__content-right_item-title">Сервис и помощь</p>
+                                <div class="profile__content-right_item-description">
+                                    <a href="" class="profile__content-right_item-description_link">Написать менеджеру</a>
+                                </div>
+                            </div>
+                            <div class="profile__content-right_item-img">
+                                <img src="images/icons/chat-text.svg" class="profile__content-right_main-icon" alt="">
+                            </div>
+                        </div>
+                        <div class="profile__content-right_main-item">
+                            <div class="profile__content-right_item-header">
+                                <p class="profile__content-right_item-title">Вопросы-ответы</p>
+                                <div class="profile__content-right_item-description">
+                                    <a href="" class="profile__content-right_item-description_link">Найти ответы</a>
+                                </div>
+                            </div>
+                            <div class="profile__content-right_item-img">
+                                <img src="images/icons/question-square-fill.svg" class="profile__content-right_main-icon" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile__content-right_confidential">
+                    личные данные
+                </div>
+                <div class="profile__content-right_orders">
+                    мои заказы
+                </div>
+                <div class="profile__content-right_card">
+                    программа лояльности
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/profile.js"></script>
+    <script src="js/cat.js"></script>
+
+</main>
+
+<footer class="footer">
+    <hr class="footer__hr-top">
+    <div class="footer__container">
+        <a href="index.html" class="footer__logo">
+            <img src="images/logo.jpg" alt="Основное изображение логотипа" class="footer__logo-image">
+        </a>
+        <div class="footer__description">
+            <div class="footer__inform">
+                <div class="footer__address">
+                    <img src="images/icons/geo-alt-fill.svg" alt="Иконка карты" class="footer__address-icons">
+                    <a href="" class="footer__address-link">г. Партизанск, ул. Замараева, 5</a>
+                </div>
+
+                <p class="footer__working-hours">Работаем с 8:00-19:00 <br>Доставка с 8:30-18:00</p>
+
+                <div class="footer__telephone">
+                    <p class="footer__telephone-number">+7 914 662-79-11</p>
+                    <p class="footer__telephone-description">Ответим на все вопросы!</p>
+                </div>
+            </div>
+            <div class="footer__social-networks">
+                <a href="" class="footer__social-network-item">Vk</a>
+                <a href="" class="footer__social-network-item">Telegram</a>
+                <a href="" class="footer__social-network-item">WhatsApp</a>
+                <a href="" class="footer__social-network-item">
+                    <!--                    <del>(Запрещенограм)</del> -->
+                    Instagram*</a>
+                <p class="footer__social-network-item complement-text">* принадлежит компании Meta, которая признана
+                    экстремистской и запрещена на территории РФ</p>
+            </div>
+        </div>
+    </div>
+    <hr class="footer__hr-bottom">
+    <div class="footer__bottom">
+        <p class="footer__conf">
+            © 2018 - 2025 Цветочный магазин "Лаванда". Все права защищены.
+        </p>
+        <a href="" class="footer__web-developer">
+            <p>Веб-сайт разработан
+                <ins>gonosanna</ins>
+            </p>
+        </a>
+    </div>
+</footer>
+
+</body>
+</html>

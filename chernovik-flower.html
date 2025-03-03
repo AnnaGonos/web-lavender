@@ -15,10 +15,9 @@
     <link rel="icon" type="image/png" href="images/logotype.jpg">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <title>Регистрация</title>
+    <title>Цветочный магазин "Лаванда" | Заказ букетов с доставкой на дом в Партизанске</title>
 </head>
 <body>
-<<<<<<< HEAD
 <header class="header" id="header">
     <a href="#" class="header__logo">
         <img src="images/logo.jpg" alt="Основное изображение логотипа">
@@ -32,18 +31,6 @@
             <li class="header__menu-item"><a href="catalog.html"
                                              class="header__menu-link">Каталог</a></li>
             <li class="header__menu-item "><p class="header__menu-link">Клиентам</p>
-=======
-
-<header class="header" id="header">
-    <a href="index.html" class="header__logo">
-        <img src="images/logo.jpg" alt="Основное изображение логотипа">
-    </a>
-    <nav class="header__menu">
-        <ul class="header__menu-list">
-            <li class="header__menu-item"><a href="catalog.html" class="header__menu-link">Каталог</a></li>
-            <li class="header__menu-item">
-                <p class="header__menu-link">Клиентам</p>
->>>>>>> b62acf3d6ae7644b4080c9928fa6118f7e63bf70
                 <ul class="dropdown-menu">
                     <li class="dropdown-item"><a href="delivery.html" class="dropdown-link">Доставка</a></li>
                     <li class="dropdown-item"><a href="faq.html" class="dropdown-link">Вопрос-ответ</a></li>
@@ -52,16 +39,11 @@
                 </ul>
             </li>
             <li class="header__menu-item"><a href="blog.html" class="header__menu-link">Блог</a></li>
-<<<<<<< HEAD
             <li class="header__menu-item"><a href="" class="header__menu-link">Контакты</a></li>
-=======
-            <li class="header__menu-item"><a href="contacts.html" class="header__menu-link">Контакты</a></li>
->>>>>>> b62acf3d6ae7644b4080c9928fa6118f7e63bf70
         </ul>
     </nav>
     <div class="header__menu-person">
         <a href="" class="header__menu-person-link">
-<<<<<<< HEAD
             <img src="images/icons/search.svg" alt="" class="header__menu-person-icon">
         </a>
         <a href="" class="header__menu-person-link">
@@ -76,96 +58,49 @@
         </a>
     </div>
     <script src="js/menuList.js"></script>
-=======
-            <img src="images/icons/bag.svg" alt="Иконка корзины-сумки">
-            <p class="header__menu-person-link-text">21</p>
-        </a>
-        <a href="" class="header__menu-person-link">
-            <img src="images/icons/person.svg" alt="Иконка личного кабинета">
-        </a>
-    </div>
->>>>>>> b62acf3d6ae7644b4080c9928fa6118f7e63bf70
 </header>
+<div id="loader" class="loader">
+    <img src="https://media.tenor.com/_4kl3WUiiQUAAAAi/peach-cat.gif" alt="Загрузка..."/>
+</div>
+
+
+
+<script src="js/cat.js"></script>
 <script src="js/scrollTop.js"></script>
 <script src="js/activeMenu.js"></script>
 <main>
 
-    <section class="authorization">
-        <h1 class="authorization__title">Регистрация</h1>
-        <div class="authorization__container">
-            <form id="registration-form">
-                <div class="authorization__option">
-                    <label for="first-name">Имя:</label>
-                    <input type="text" id="first-name" name="first-name" required placeholder="Введите ваше имя">
 
-                    <label for="last-name">Фамилия:</label>
-                    <input type="text" id="last-name" name="last-name" required placeholder="Введите вашу фамилию">
-
-                    <label for="email">Электронная почта:</label>
-                    <input type="email" id="email" name="email" required placeholder="example@mail.com">
-
-                    <label for="phone">Телефон:</label>
-                    <input type="tel" id="phone" name="phone" required placeholder="+7 (___) ___-__-__">
-
-                    <label for="password">Пароль:</label>
-                    <input type="password" id="password" name="password" required placeholder="Введите пароль">
-
-                    <label for="confirm-password">Подтверждение пароля:</label>
-                    <input type="password" id="confirm-password" name="confirm-password" required placeholder="Подтвердите пароль">
-
-                    <div class="authorization__option-control-group">
-                        <button type="submit">Зарегистрироваться</button>
-                        <div class="authorization__option-control">
-                            <a href="">Не помню пароль</a>
-                            <a href="authorization.html">Авторизация</a>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
+    <section class="newsletter">
+        <h2 class="newsletter__title">Оставайтесь на связи с миром цветов!</h2>
+        <p class="newsletter__description">Подписывайтесь на нашу рассылку и будьте первыми, кто узнает о новых поступлениях, эксклюзивных акциях и вдохновляющих идеях для оформления букетов и композиций.</p>
+        <form class="newsletter__form">
+            <input type="email" placeholder="Ваш E-mail" class="newsletter__input" required>
+            <button type="submit" class="newsletter__button">Подписаться</button>
+        </form>
+        <p class="newsletter__consent">
+            Я даю свое согласие на получение email-рассылки, обработку персональных данных и принимаю условия
+            <a href="#" class="newsletter__link">Политики конфиденциальности
+            </a>.
+        </p>
     </section>
 
 
-
-
-
-    <section class="messenger-container">
-        <div class="messenger-container__icon" id="toggleIcon">
-            <img class="messenger-container__icon-item" id="firstIcon" src="images/icons/chat-right-text.svg"
-                 alt="Иконка мессенджеров">
-            <img class="messenger-container__icon-item" id="secondIcon" src="images/icons/x-lg.svg"
-                 alt="Иконка мессенджеров">
-        </div>
-        <div class="messenger-container__links" id="linksContainer">
-            <div class="messenger-container__content">
-                <p class="messenger-container__title">Требуется помощь?</p>
-                <p>Обращайтесь к нам любым удобным для вас способом!</p>
-            </div>
-            <a href="https://t.me/yourtelegram" class="messenger-container__link-item">Telegram</a>
-            <a href="https://wa.me/yourwhatsapp" class="messenger-container__link-item">WhatsApp</a>
-            <p class="messenger-container__link-item">+7 914 662-79-11</p>
-
-        </div>
-    </section>
     <script src="js/messenger.js"></script>
-    <div id="loader" class="loader">
-        <img src="https://media.tenor.com/_4kl3WUiiQUAAAAi/peach-cat.gif" alt="Загрузка..."/>
-    </div>
 
-    <script src="js/cat.js"></script>
 </main>
 
 <footer class="footer">
     <hr class="footer__hr-top">
     <div class="footer__container">
-        <a href="index.html" class="footer__logo">
+        <a href="#" class="footer__logo">
             <img src="images/logo.jpg" alt="Основное изображение логотипа" class="footer__logo-image">
         </a>
         <div class="footer__description">
             <div class="footer__inform">
                 <div class="footer__address">
                     <img src="images/icons/geo-alt-fill.svg" alt="Иконка карты" class="footer__address-icons">
-                    <a href="" class="footer__address-link">г. Партизанск, ул. Замараева, 5</a>
+                    <a href="#" class="footer__address-link">г. Партизанск, ул. Замараева, 5</a>
                 </div>
 
                 <p class="footer__working-hours">Работаем с 8:00-19:00 <br>Доставка с 8:30-18:00</p>
@@ -176,10 +111,10 @@
                 </div>
             </div>
             <div class="footer__social-networks">
-                <a href="" class="footer__social-network-item">Vk</a>
-                <a href="" class="footer__social-network-item">Telegram</a>
-                <a href="" class="footer__social-network-item">WhatsApp</a>
-                <a href="" class="footer__social-network-item">
+                <a href="#" class="footer__social-network-item">Vk</a>
+                <a href="#" class="footer__social-network-item">Telegram</a>
+                <a href="#" class="footer__social-network-item">WhatsApp</a>
+                <a href="#" class="footer__social-network-item">
                     <!--                    <del>(Запрещенограм)</del> -->
                     Instagram*</a>
                 <p class="footer__social-network-item complement-text">* принадлежит компании Meta, которая признана
@@ -192,7 +127,7 @@
         <p class="footer__conf">
             © 2018 - 2025 Цветочный магазин "Лаванда". Все права защищены.
         </p>
-        <a href="" class="footer__web-developer">
+        <a href="#" class="footer__web-developer">
             <p>Веб-сайт разработан
                 <ins>gonosanna</ins>
             </p>
@@ -202,4 +137,3 @@
 
 </body>
 </html>
-

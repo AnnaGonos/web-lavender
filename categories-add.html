@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <meta name="keywords" content="Лаванда, Партизанск, флористика, цветы, букеты, подарки, доставка цветов, магазин
+    цветов, флористический магазин, цветочная лавка, флористические услуги, оформление мероприятий, цветы в Партизанске,
+    цветы из Партизанска, магазин Лаванда">
+    <meta name="description" content="Магазин флористики Лаванда в Партизанске предлагает широкий ассортимент свежих
+    цветов, уникальных букетов и флористических композиций. Мы предоставляем качественные услуги по доставке цветов и
+    оформлению мероприятий. Выбирайте самые красивые и свежие цветы для любого повода!">
+    <link rel="stylesheet" href="css/outlines.css">
+    <link rel="icon" type="image/png" href="images/logotype.jpg">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <title>Цветочный магазин "Лаванда" | Заказ букетов с доставкой на дом в Партизанске</title>
+</head>
+<body>
+<header class="header" id="header">
+    <div class="header__main">
+        <a href="#" class="header__logo">
+            <img src="images/logo.jpg" alt="Основное изображение логотипа">
+        </a>
+        <div class="header__list">
+            <img id="header-list" src="images/icons/list.svg" alt="Открыть меню" class="header__list-item">
+            <img id="header-cancel" src="images/icons/x-lg.svg" alt="Закрыть меню" class="header__list-item">
+        </div>
+        <nav class="header__menu">
+            <ul class="header__menu-list" id="menu-list">
+                <li class="header__menu-item" id="catalog-item">
+                    <div class="header__catalog-item">
+                        <img src="images/icons/list.svg" alt="Меню" class="header__list-icon">
+                        <a href="catalog.html" class="header__menu-link">Каталог</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__menu-person">
+            <div class="header__search-container">
+                <input type="text" placeholder="Тюльпаны..." class="header__search-input">
+                <img src="images/icons/search.svg" alt="Поиск" class="header__menu-person-icon">
+            </div>
+            <a href="" class="header__menu-person-link">
+                <img src="images/icons/heart.svg" alt="" class="header__menu-person-icon">
+            </a>
+            <a href="" class="header__menu-person-link">
+                <img src="images/icons/bag.svg" alt="Иконка корзины-сумки" class="header__menu-person-icon">
+                <p class="header__menu-person-link-count">21</p>
+            </a>
+            <a href="" class="header__menu-person-link">
+                <img src="images/icons/person.svg" alt="Иконка личного кабинета" class="header__menu-person-icon">
+            </a>
+        </div>
+    </div>
+
+    <div class="header__dropdown-menu" id="dropdown-menu">
+        <ul class="dropdown-menu__left">
+            <li class="dropdown-menu__item active" data-target="bouquets">
+                <a href="catalog.html">Каталог букетов</a>
+                <img src="images/icons/chevron-right.svg" alt=">" class="dropdown-menu__icon">
+            </li>
+            <li class="dropdown-menu__item">
+                <a href="cards.html" class="dropdown-menu__link">Подарочные карты</a>
+            </li>
+            <li class="dropdown-menu__item" data-target="clients">
+                <p>Клиентам</p>
+                <img src="images/icons/chevron-right.svg" alt=">" class="dropdown-menu__icon">
+            </li>
+            <li class="dropdown-menu__item">
+                <a href="blog.html" class="dropdown-menu__link">Блог</a>
+            </li>
+            <li class="dropdown-menu__item">
+                <a href="vacancies.html" class="dropdown-menu__link">Вакансии</a>
+            </li>
+            <li class="dropdown-menu__item">
+                <a href="about.html" class="dropdown-menu__link">О нас</a>
+            </li>
+            <li class="dropdown-menu__item">
+                <a href="contacts.html" class="dropdown-menu__link">Контакты</a>
+            </li>
+        </ul>
+
+        <div class="dropdown-menu__right">
+            <ul class="dropdown-menu__content active" id="bouquets">
+                <li><a href="#">Онлайн-витрина</a></li>
+                <li><a href="#">Цветочные композиции</a></li>
+                <li><a href="#">Свадебные букеты</a></li>
+            </ul>
+            <ul class="dropdown-menu__content" id="clients">
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Вопрос-ответ</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Уход за букетом</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/dropdown-menu.js"></script>
+
+    <script src="js/menuList.js"></script>
+</header>
+<script src="js/scrollTop.js"></script>
+<script src="js/activeMenu.js"></script>
+<main>
+
+    <section class="categories">
+        <h1 class="categories__title">Категории</h1>
+        <div class="categories__container">
+            <div class="categories__item">
+                <h5>Дуобукеты</h5>
+                <span>Описание</span>
+            </div>
+            <div class="categories__item">
+                <h5>Дуобукеты</h5>
+                <span>Описание</span>
+            </div>
+        </div>
+
+        <a href="" class="categories__add-button">
+            Добавить
+        </a>
+    </section>
+
+
+
+    <div id="loader" class="loader">
+        <img src="https://media.tenor.com/_4kl3WUiiQUAAAAi/peach-cat.gif" alt="Загрузка..."/>
+    </div>
+
+    <script src="js/cat.js"></script>
+</main>
+
+
+<footer class="footer">
+    <hr class="footer__hr-top">
+    <div class="footer__container">
+        <a href="#" class="footer__logo">
+            <img src="images/logo.jpg" alt="Основное изображение логотипа" class="footer__logo-image">
+        </a>
+        <div class="footer__description">
+            <div class="footer__inform">
+                <div class="footer__address">
+                    <img src="images/icons/geo-alt-fill.svg" alt="Иконка карты" class="footer__address-icons">
+                    <a href="#" class="footer__address-link">г. Партизанск, ул. Замараева, 5</a>
+                </div>
+
+                <p class="footer__working-hours">Работаем с 8:00-19:00 <br>Доставка с 8:30-18:00</p>
+
+                <div class="footer__telephone">
+                    <p class="footer__telephone-number">+7 914 662-79-11</p>
+                    <p class="footer__telephone-description">Ответим на все вопросы!</p>
+                </div>
+            </div>
+            <div class="footer__social-networks">
+                <a href="#" class="footer__social-network-item">Vk</a>
+                <a href="#" class="footer__social-network-item">Telegram</a>
+                <a href="#" class="footer__social-network-item">WhatsApp</a>
+                <a href="#" class="footer__social-network-item">
+                    <!--                    <del>(Запрещенограм)</del> -->
+                    Instagram*</a>
+                <p class="footer__social-network-item complement-text">* принадлежит компании Meta, которая признана
+                    экстремистской и запрещена на территории РФ</p>
+            </div>
+        </div>
+    </div>
+    <hr class="footer__hr-bottom">
+    <div class="footer__bottom">
+        <p class="footer__conf">
+            © 2018 - 2025 Цветочный магазин "Лаванда". Все права защищены.
+        </p>
+        <a href="" class="footer__web-developer">
+            <p>Веб-сайт разработан
+                <ins>gonosanna</ins>
+            </p>
+        </a>
+    </div>
+</footer>
+
+<div class="mobile-bottom-menu">
+    <a href="catalog.html" class="mobile-bottom-menu__item">
+        <img src="images/icons/fi-rr-apps.svg" alt="Каталог">
+        <span>Каталог</span>
+    </a>
+    <a href="favorites.html" class="mobile-bottom-menu__item">
+        <img src="images/icons/fi-rr-heart.svg" alt="Избранное">
+        <span>Избранное</span>
+    </a>
+    <a href="cart.html" class="mobile-bottom-menu__item">
+        <img src="images/icons/fi-rr-shopping-cart.svg" alt="Корзина">
+        <span>Корзина</span>
+    </a>
+    <a href="login.html" class="mobile-bottom-menu__item">
+        <img src="images/icons/fi-rr-user.svg" alt="Войти">
+        <span>Войти</span>
+    </a>
+</div>
+
+</body>
+</html>
